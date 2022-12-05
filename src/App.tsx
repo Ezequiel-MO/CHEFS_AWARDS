@@ -1,12 +1,17 @@
-import Button from '@mui/material/Button'
 import './App.css'
+import { Typography } from '@mui/material'
+import { MainPageLayout } from './components/layouts'
 
 function App() {
   return (
-    <div>
-      <h1 className='bg-red-500 mb-5'>Chefs Awards</h1>
-      <Button variant='contained'>Hello World</Button>
-    </div>
+    <MainPageLayout>
+      <Typography variant='h1' component='h1'>
+        Chefs Awards
+      </Typography>
+      <Typography variant='h2' sx={{ mb: 1 }}>
+        Presentation
+      </Typography>
+    </MainPageLayout>
   )
 }
 
