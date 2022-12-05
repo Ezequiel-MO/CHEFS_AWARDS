@@ -1,2 +1,1 @@
-export * from './MainPageLayout'
-export * from './EventPageLayout'
+export * from './PageLayout'

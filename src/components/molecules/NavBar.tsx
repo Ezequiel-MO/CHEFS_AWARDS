@@ -1,11 +1,19 @@
-import { AppBar, Box, Button, IconButton, Link, Toolbar } from '@mui/material'
+import {
+  AppBar,
+  Box,
+  Button,
+  IconButton,
+  Link,
+  Toolbar,
+  Typography
+} from '@mui/material'
 import { MenuOutlined } from '@mui/icons-material'
 import Logo from '../../assets/logo.jpg'
 
 export const Navbar = () => {
   return (
     <AppBar>
-      <Toolbar className='my-5'>
+      <Toolbar className='my-5 bg-blue-400'>
         <Link display='flex' alignItems='center'>
           <img src={Logo} alt='logo' className='max-w-[100px] object-contain' />
         </Link>
@@ -14,11 +22,15 @@ export const Navbar = () => {
 
         <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
           <Link>
-            <Button>CHEFF FEAST</Button>
+            <Typography className='text-white cursor-pointer hover:font-bold'>
+              CHEFF FEAST
+            </Typography>
           </Link>
 
           <Link>
-            <Button>AWARDS DINNER</Button>
+            <Typography className='text-white cursor-pointer hover:font-bold'>
+              AWARDS DINNER
+            </Typography>
           </Link>
         </Box>
 
