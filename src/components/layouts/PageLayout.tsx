@@ -9,7 +9,7 @@ interface Props {
 
 export const PageLayout: FC<Props> = ({ children }) => {
   return (
-    <Box className='flex flex-col min-h-screen'>
+    <Box className='flex flex-col items-center justify-between min-h-screen'>
       <nav>
         <Navbar />
       </nav>
@@ -17,7 +17,7 @@ export const PageLayout: FC<Props> = ({ children }) => {
       <main className='my-[100px] mx-auto max-w-[1440px] px-[30px]'>
         {children}
       </main>
-      <footer className='mt-auto sticky'>
+      <footer className='w-screen'>
         <Footer />
       </footer>
     </Box>

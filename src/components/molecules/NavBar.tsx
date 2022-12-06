@@ -13,7 +13,7 @@ import Logo from '../../assets/logo.jpg'
 export const Navbar = () => {
   return (
     <AppBar>
-      <Toolbar className='my-5 bg-blue-400'>
+      <Toolbar className='my-5 bg-[#008989]'>
         <Link display='flex' alignItems='center'>
           <img src={Logo} alt='logo' className='max-w-[100px] object-contain' />
         </Link>
