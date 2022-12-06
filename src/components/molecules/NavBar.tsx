@@ -1,11 +1,11 @@
+import { Link } from 'react-router-dom'
 import {
   AppBar,
   Box,
-  Button,
   IconButton,
-  Link,
   Toolbar,
-  Typography
+  Typography,
+  Link as MuiLink
 } from '@mui/material'
 import { MenuOutlined } from '@mui/icons-material'
 import Logo from '../../assets/logo.jpg'
@@ -14,20 +14,20 @@ export const Navbar = () => {
   return (
     <AppBar>
       <Toolbar className='my-5 bg-med_blue_light'>
-        <Link display='flex' alignItems='center'>
+        <MuiLink display='flex' alignItems='center' href='/'>
           <img src={Logo} alt='logo' className='max-w-[100px] object-contain' />
-        </Link>
+        </MuiLink>
 
         <Box flex={1} />
 
-        <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-          <Link>
+        <Box className='sm:flex sm:flex-col'>
+          <Link to='/chef_feast'>
             <Typography className='text-white cursor-pointer hover:font-bold'>
               CHEF FEAST
             </Typography>
           </Link>
 
-          <Link>
+          <Link to='/awards_dinner'>
             <Typography className='text-white cursor-pointer hover:font-bold'>
               AWARDS DINNER
             </Typography>
@@ -36,11 +36,9 @@ export const Navbar = () => {
 
         <Box flex={1} />
 
-        <Link>
-          <IconButton>
-            <MenuOutlined />
-          </IconButton>
-        </Link>
+        <IconButton>
+          <MenuOutlined />
+        </IconButton>
       </Toolbar>
     </AppBar>
   )

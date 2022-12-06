@@ -1,12 +1,11 @@
-import './App.css'
-import { PageLayout } from './components/layouts'
-import { MainSection } from './screens/MainSection'
+import { RouterProvider } from 'react-router-dom'
+import { router } from './routes'
 
 function App() {
   return (
-    <PageLayout>
-      <MainSection />
-    </PageLayout>
+    <>
+      <RouterProvider router={router} />
+    </>
   )
 }
 

@@ -1,13 +1,9 @@
-import { FC } from 'react'
+import { Outlet } from 'react-router-dom'
 import { Box } from '@mui/material'
 import { Navbar } from '../molecules'
 import { Footer } from '../organisms'
 
-interface Props {
-  children: React.ReactNode
-}
-
-export const PageLayout: FC<Props> = ({ children }) => {
+export const PageLayout = () => {
   return (
     <Box className='flex flex-col items-center justify-between min-h-screen'>
       <nav>
@@ -15,7 +11,7 @@ export const PageLayout: FC<Props> = ({ children }) => {
       </nav>
       <aside>Side Menu</aside>
       <main className='my-[100px] mx-auto max-w-[1440px] px-[30px]'>
-        {children}
+        <Outlet />
       </main>
       <footer className='w-screen'>
         <Footer />
