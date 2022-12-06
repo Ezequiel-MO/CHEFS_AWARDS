@@ -13,7 +13,7 @@ import Logo from '../../assets/logo.jpg'
 export const Navbar = () => {
   return (
     <AppBar>
-      <Toolbar className='my-5 bg-[#008989]'>
+      <Toolbar className='my-5 bg-med_blue_light'>
         <Link display='flex' alignItems='center'>
           <img src={Logo} alt='logo' className='max-w-[100px] object-contain' />
         </Link>
@@ -23,7 +23,7 @@ export const Navbar = () => {
         <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
           <Link>
             <Typography className='text-white cursor-pointer hover:font-bold'>
-              CHEFF FEAST
+              CHEF FEAST
             </Typography>
           </Link>
 

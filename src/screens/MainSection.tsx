@@ -5,8 +5,10 @@ import { AccordionParagraph } from '../components/molecules/Accordion'
 export const MainSection = () => {
   return (
     <Paper elevation={0} className='p-2'>
-      <Typography variant='h1'>CHEFS AWARDS</Typography>
-      <Typography variant='h2' sx={{ mb: 1 }}>
+      <Typography variant='h1' className='text-med_sand'>
+        CHEFS AWARDS
+      </Typography>
+      <Typography variant='h2' sx={{ mb: 1 }} className='text-med_sand'>
         Presentation
       </Typography>
       <div>

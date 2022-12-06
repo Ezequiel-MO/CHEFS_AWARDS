@@ -19,7 +19,7 @@ export const AccordionParagraph: FC<Props> = ({ title, id, children }) => {
       <AccordionSummary expandIcon={<ExpandMoreIcon />} id={id}>
         <Typography
           variant='h1'
-          className='text-[#b4840d] hover:text-[#9a6c63]'
+          className='text-med_green hover:text-med_green_light'
         >
           {title}
         </Typography>
