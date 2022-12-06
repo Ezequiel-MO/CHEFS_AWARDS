@@ -1,5 +1,4 @@
 import { Typography, Paper } from '@mui/material'
-
 import { AccordionParagraph } from '../components/molecules/Accordion'
 
 export const MainSection = () => {
