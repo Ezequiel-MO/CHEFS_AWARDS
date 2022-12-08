@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import {
   AppBar,
   Box,
@@ -20,18 +20,32 @@ export const Navbar = () => {
 
         <Box flex={1} />
 
-        <Box className='sm:flex sm:flex-col'>
-          <Link to='/chef_feast'>
+        <Box className='sm:flex sm:flex-col p-1'>
+          <NavLink
+            to='/chef_feast'
+            className={({ isActive }) =>
+              isActive
+                ? 'bg-med_sand font-bold text-center rounded p-1'
+                : 'text-center'
+            }
+          >
             <Typography className='text-white cursor-pointer hover:font-bold'>
               CHEF FEAST
             </Typography>
-          </Link>
+          </NavLink>
 
-          <Link to='/awards_dinner'>
-            <Typography className='text-white cursor-pointer hover:font-bold'>
+          <NavLink
+            to='/awards_dinner'
+            className={({ isActive }) =>
+              isActive
+                ? 'bg-med_sand font-bold text-center rounded p-1'
+                : 'text-center'
+            }
+          >
+            <Typography className='text-white cursor-pointer hover:font-bold text-center rounded'>
               AWARDS DINNER
             </Typography>
-          </Link>
+          </NavLink>
         </Box>
 
         <Box flex={1} />
