@@ -12,7 +12,7 @@ import { FC } from 'react'
 type Props = {
   children: React.ReactNode
   title: string
-  description: string[]
+  description: string
   time: string
 }
 
@@ -24,7 +24,7 @@ export const TimeLineItem: FC<Props> = ({
 }) => {
   return (
     <TimelineItem>
-      <TimelineOppositeContent sx={{ m: 'auto 0' }}>
+      <TimelineOppositeContent sx={{ m: '15px 0' }}>
         {time}
       </TimelineOppositeContent>
       <TimelineSeparator>
@@ -35,8 +35,7 @@ export const TimeLineItem: FC<Props> = ({
         <Typography variant='h6' component='span'>
           {title}
         </Typography>
-        <Typography>{description[0]}</Typography>
-        {description[1] && <Typography>{description[1]}</Typography>}
+        <Typography>{description}</Typography>
       </TimelineContent>
     </TimelineItem>
   )
