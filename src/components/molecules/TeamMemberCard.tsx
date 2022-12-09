@@ -1,11 +1,14 @@
-import { Avatar, Chip } from '@mui/material'
 import { FC } from 'react'
+import { Avatar } from '@mui/material'
+import { Chip } from '../atoms'
+import { ILabel } from '../organisms'
+import { MailOutlineOutlined } from '@mui/icons-material'
 
 interface Props {
   avatar: string
   name: string
   role: string
-  labels: string[]
+  labels: ILabel[]
   description?: string
   email?: string
   more?: string
@@ -36,12 +39,22 @@ export const TeamMemberCard: FC<Props> = ({
       </div>
       <div className='flex flex-row justify-center'>
         {labels.map((label, index) => (
-          <Chip key={index} label={label} className='mx-1' />
+          <div key={index}>
+            <Chip label={label.label} color={label.color} />
+          </div>
         ))}
       </div>
-      <h3>{description}</h3>
-      <h3>{email}</h3>
-      <h3>{more}</h3>
+      <div className='flex flex-col items-center justify-center mt-2'>
+        <p className='italic text-lg text-center my-2'>{description}</p>
+        <h3>
+          <span className='mr-2'>
+            <MailOutlineOutlined />
+          </span>
+          {email}
+        </h3>
+      </div>
+
+      {/* <h3>{more}</h3> */}
     </div>
   )
 }
