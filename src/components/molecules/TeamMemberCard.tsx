@@ -6,8 +6,8 @@ interface Props {
   name: string
   role: string
   labels: string[]
-  description: string
-  email: string
+  description?: string
+  email?: string
   more?: string
 }
 
