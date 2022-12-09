@@ -1,20 +1,20 @@
 import { Grid } from '@mui/material'
 import { TeamMemberCard } from '../molecules'
-import Sara from '../../assets/meet_team/profile_pics/user-1.jpg'
+import Sara from '../../assets/meet_team/profile_pics/sarah.jpg'
 import Montse from '../../assets/meet_team/profile_pics/user-2.jpg'
 import Minerva from '../../assets/meet_team/profile_pics/user-5.jpg'
 import Cecilia from '../../assets/meet_team/profile_pics/user-11.jpg'
-import Merche from '../../assets/meet_team/profile_pics/user-20.jpg'
-import Alicia from '../../assets/meet_team/profile_pics/user-14.jpg'
-import Andrea from '../../assets/meet_team/profile_pics/user-16.jpg'
+import Federica from '../../assets/meet_team/profile_pics/user-20.jpg'
+import Maite from '../../assets/meet_team/profile_pics/user-14.jpg'
+import Andrea from '../../assets/meet_team/profile_pics/andrea.jpg'
 import Ezequiel from '../../assets/meet_team/profile_pics/user-13.jpg'
 
 const teamMembers = [
   {
     avatar: Montse,
     name: 'Montse Miranda',
-    role: 'Chef',
-    labels: ['Chef', 'Food'],
+    role: 'Event Manager',
+    labels: ['Supervisor', 'Client Mngmt'],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
     email: 'montse@cutt.events',
     more: 'https://www.linkedin.com/in/montse-fernandez-fernandez-5b1b3b1b3/'
@@ -22,8 +22,8 @@ const teamMembers = [
   {
     avatar: Minerva,
     name: 'Minerva Martinez',
-    role: 'Chef',
-    labels: ['Chef', 'Food'],
+    role: 'Project Manager',
+    labels: ['Supervisor', 'Food'],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
     email: 'minerva@gmail.com',
     more: 'https://www.linkedin.com/in/minerva-fernandez-fernandez-5b1b3b1b3/'
@@ -31,58 +31,45 @@ const teamMembers = [
   {
     avatar: Ezequiel,
     name: 'Ezequiel Martinez',
-    role: 'Chef',
-    labels: ['Technology', 'Signage'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-    email: 'ezequiel@cutt.events',
-    more: 'https://www.linkedin.com/in/ezequiel-fernandez-fernandez-5b1b3b1b3/'
+    role: 'Designer & Developer',
+    labels: ['Strategic Content', 'Signage'],
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit'
   },
   {
-    avatar: Alicia,
+    avatar: Maite,
     name: 'Maite Audet',
-    role: 'Chef',
-    labels: ['Chef', 'Food'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-    email: 'alicia@cutt.events',
-    more: 'https://www.linkedin.com/in/alicia-fernandez-fernandez-5b1b3b1b3/'
+    role: 'Project Manager',
+    labels: ['CAC Coordinator', 'Setup'],
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit'
   },
   {
     avatar: Sara,
     name: 'Sarah Dambruoso',
-    role: 'Chef',
-    labels: ['Chef', 'Food'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-    email: 'sara@cutt.events',
-    more: 'https://www.linkedin.com/in/sara-fernandez-fernandez-5b1b3b1b3/'
+    role: 'Project Manager',
+    labels: ['Guest Relations', 'Food'],
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit'
   },
   {
     avatar: Cecilia,
-    name: 'Celia Perez',
-    role: 'Chef',
-    labels: ['Sponsors', 'Transportation'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-    email: 'cecilia@cutt.events',
-
-    more: 'https://www.linkedin.com/in/cecilia-fernandez-fernandez-5b1b3b1b3/'
+    name: 'Celia Jimenez',
+    role: 'Project Manager',
+    labels: ['setup', 'Chef Dinner'],
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit'
   },
   {
-    avatar: Merche,
-    name: 'Federica Winoni',
-    role: 'Chef',
-    labels: ['Chef', 'Food'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-    email: 'merche@cutt.events',
-    more: 'https://www.linkedin.com/in/merche-fernandez-fernandez-5b1b3b1b3/'
+    avatar: Federica,
+    name: 'Federica Gaggioli',
+    role: 'Key Account Manager',
+    labels: ['Press', 'Sponsors'],
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit'
   },
 
   {
     avatar: Andrea,
-    name: 'Andrea Carloti',
+    name: 'Andrea Longhini',
     role: 'Chef',
-    labels: ['Chef', 'Food'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-    email: 'andrea@cutt.events',
-    more: 'https://www.linkedin.com/in/andrea-fernandez-fernandez-5b1b3b1b3/'
+    labels: ['Transportation'],
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit'
   }
 ]
 
