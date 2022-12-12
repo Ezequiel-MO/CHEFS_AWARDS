@@ -1,6 +1,6 @@
 import { Typography, Paper } from '@mui/material'
 import { AccordionParagraph } from '../../components/molecules/Accordion'
-import { TimeLine } from '../../components/organisms'
+import { TheVenue, TimeLine } from '../../components/organisms'
 
 export const ChefFeast = () => {
   return (
@@ -18,12 +18,7 @@ export const ChefFeast = () => {
             elit
           </Typography>
         </AccordionParagraph>
-        <AccordionParagraph title='The Venue' id='panel2a-header'>
-          <Typography paragraph variant='h6' align='left' className='indent-3'>
-            Info about the Concept ipsum dolor sit amet consectetur adipisicing
-            elit
-          </Typography>
-        </AccordionParagraph>
+        <TheVenue />
         <AccordionParagraph title='A Timeline of the Night' id='panel3a-header'>
           <TimeLine type='chef_feast' />
         </AccordionParagraph>
