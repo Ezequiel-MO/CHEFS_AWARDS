@@ -10,7 +10,6 @@ export const PageLayout = () => {
         <Navbar />
       </nav>
       <main className='my-[100px] mx-auto max-w-[1440px] px-[30px]'>
-        {/*   <aside>Side Menu</aside> */}
         <Outlet />
       </main>
       <footer className='w-screen'>

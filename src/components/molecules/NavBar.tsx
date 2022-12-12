@@ -1,50 +1,51 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import {
   AppBar,
   Box,
   IconButton,
   Toolbar,
-  Typography,
-  Link as MuiLink
+  Link as MuiLink,
+  Button
 } from '@mui/material'
 import { MenuOutlined } from '@mui/icons-material'
 import Logo from '../../assets/logo.jpg'
 
 export const Navbar = () => {
+  const { pathname } = useLocation()
   return (
     <AppBar>
-      <Toolbar className='my-5 bg-med_blue_light'>
+      <Toolbar className='mt-2 py-10 bg-med_blue_light'>
         <MuiLink display='flex' alignItems='center' href='/'>
           <img src={Logo} alt='logo' className='max-w-[100px] object-contain' />
         </MuiLink>
 
         <Box flex={1} />
 
-        <Box className='sm:flex sm:flex-col p-1'>
+        <Box className='flex items-center'>
           <NavLink
             to='/chef_feast'
             className={({ isActive }) =>
-              isActive
-                ? 'bg-med_sand font-bold text-center rounded p-1'
-                : 'text-center'
+              !isActive || pathname === '/'
+                ? 'font-bold text-center rounded p-1'
+                : 'hidden'
             }
           >
-            <Typography className='text-white cursor-pointer hover:font-bold'>
+            <Button className='text-white  rounded cursor-pointer hover:font-bold '>
               CHEF FEAST
-            </Typography>
+            </Button>
           </NavLink>
 
           <NavLink
             to='/awards_dinner'
             className={({ isActive }) =>
-              isActive
-                ? 'bg-med_sand font-bold text-center rounded p-1'
-                : 'text-center'
+              !isActive || pathname === '/'
+                ? ' font-bold text-center rounded p-1'
+                : 'hidden'
             }
           >
-            <Typography className='text-white cursor-pointer hover:font-bold text-center rounded'>
+            <Button className='text-white   rounded cursor-pointer hover:font-bold text-center'>
               AWARDS DINNER
-            </Typography>
+            </Button>
           </NavLink>
         </Box>
 
