@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
 
-export const CFVenueDetails = () => {
+export const VenueDetails = () => {
   const { id } = useParams()
   return (
     <div>

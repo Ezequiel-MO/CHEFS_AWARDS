@@ -1,3 +1,5 @@
+import { FC } from 'react'
+import { useNavigate } from 'react-router-dom'
 import {
   TimelineConnector,
   TimelineContent,
@@ -6,8 +8,7 @@ import {
   TimelineOppositeContent,
   TimelineSeparator
 } from '@mui/lab'
-import { Typography } from '@mui/material'
-import { FC } from 'react'
+import { IconButton, Typography } from '@mui/material'
 
 type Props = {
   children: React.ReactNode
@@ -22,13 +23,18 @@ export const TimeLineItem: FC<Props> = ({
   description,
   time
 }) => {
+  const navigate = useNavigate()
+  const handleClick = () => navigate(`/timeline_details/${title}`)
+
   return (
     <TimelineItem>
       <TimelineOppositeContent sx={{ m: '15px 0' }}>
         {time}
       </TimelineOppositeContent>
       <TimelineSeparator>
-        <TimelineDot>{children}</TimelineDot>
+        <TimelineDot>
+          <IconButton onClick={handleClick}>{children}</IconButton>
+        </TimelineDot>
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent sx={{ py: '12px', px: 2 }}>
