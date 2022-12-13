@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        trencadis: "url('./assets/trencadis.jpg')"
+        main: "url('./assets/background_images/home_bg.jpg')",
+        chef_feast: "url('./assets/background_images/chef_feast_bg.jpg')",
+        dinner_awards: "url('./assets/background_images/dinner_awards_bg.jpg')"
       },
       colors: {
         med_blue: '#53a4d4',
