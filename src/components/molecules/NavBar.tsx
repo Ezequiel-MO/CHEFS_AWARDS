@@ -18,7 +18,7 @@ export const Navbar = () => {
           to='/chef_feast'
           className={({ isActive }) =>
             !isActive || pathname === '/'
-              ? 'font-bold text-center rounded p-1'
+              ? 'font-bold text-center rounded-lg p-1 border-2 border-med_sand'
               : 'hidden'
           }
         >
@@ -31,7 +31,7 @@ export const Navbar = () => {
           to='/awards_dinner'
           className={({ isActive }) =>
             !isActive || pathname === '/'
-              ? ' font-bold text-center rounded p-1'
+              ? ' font-bold text-center rounded p-1 border-med_blue border-2 ml-2'
               : 'hidden'
           }
         >

@@ -24,7 +24,7 @@ export const TimeLineItem: FC<Props> = ({
   time
 }) => {
   const navigate = useNavigate()
-  const handleClick = () => navigate(`/timeline_details/${title}`)
+  const handleClick = () => navigate(`/chef_feast/timeline_details/${title}`)
 
   return (
     <TimelineItem>
