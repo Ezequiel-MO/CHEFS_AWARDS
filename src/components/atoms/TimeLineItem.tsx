@@ -13,25 +13,15 @@ import { useTimelineCtx } from '../../context'
 
 type Props = {
   icon: string
-  id: string
   title: string
   description?: string
   time: string
 }
 
-export const TimeLineItem: FC<Props> = ({
-  id,
-  title,
-  description,
-  icon,
-  time
-}) => {
+export const TimeLineItem: FC<Props> = ({ title, description, icon, time }) => {
   const { setActiveId } = useTimelineCtx()
   return (
-    <TimelineItem
-      onClick={() => setActiveId(id)}
-      className='cursor-pointer rounded-md my-2 bg-med_green text-white hover:bg-med_sand'
-    >
+    <TimelineItem className='cursor-pointer rounded-md my-2 bg-med_green text-white hover:bg-med_sand'>
       <TimelineOppositeContent sx={{ m: '15px 0' }}>
         {time}
       </TimelineOppositeContent>

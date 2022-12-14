@@ -6,7 +6,7 @@ import Logo from '../../assets/logo.jpg'
 export const Navbar = () => {
   const { pathname } = useLocation()
   return (
-    <nav className='flex flex-row items-center bg-transparent '>
+    <nav className='flex flex-row items-center bg-transparent sticky top-0'>
       <MuiLink display='flex' alignItems='center' href='/'>
         <img src={Logo} alt='logo' className='max-w-[100px] object-contain' />
       </MuiLink>

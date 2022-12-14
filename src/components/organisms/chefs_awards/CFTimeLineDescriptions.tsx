@@ -7,8 +7,8 @@ export const CFTimeLineDescriptions = () => {
     <Box>
       <Typography
         variant='h2'
-        sx={{ mb: 1, height: '30vh' }}
-        className='text-med_sand'
+        sx={{ mb: 1, height: '80vh' }}
+        className='text-med_purple'
         id='cf_arrivals'
       >
         arrivals
@@ -22,8 +22,8 @@ export const CFTimeLineDescriptions = () => {
 
       <Typography
         variant='h2'
-        sx={{ mb: 1, height: '30vh' }}
-        className='text-med_sand'
+        sx={{ mb: 1, height: '80vh' }}
+        className='text-med_purple'
         id='cf_welcome_drink'
       >
         Welcome Drink
@@ -37,8 +37,8 @@ export const CFTimeLineDescriptions = () => {
 
       <Typography
         variant='h2'
-        sx={{ mb: 1, height: '30vh' }}
-        className='text-med_sand'
+        sx={{ mb: 1, height: '80vh' }}
+        className='text-med_purple'
         id='cf_dinner'
       >
         Dinner
@@ -52,8 +52,8 @@ export const CFTimeLineDescriptions = () => {
 
       <Typography
         variant='h2'
-        sx={{ mb: 1, height: '30vh' }}
-        className='text-med_sand'
+        sx={{ mb: 1, height: '80vh' }}
+        className='text-med_purple'
         id='cf_entertainment'
       >
         Dance Party

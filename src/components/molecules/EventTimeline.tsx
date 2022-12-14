@@ -13,8 +13,16 @@ interface Props {
 }
 
 export const EventTimeline: FC<Props> = ({ data }) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    const id = e.currentTarget.getAttribute('href')
+    const element = document.querySelector(id as string)
+    element?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  }
+
   return (
     <Timeline
+      className='sticky top-24'
       sx={{
         [`& .${timelineOppositeContentClasses.root}`]: {
           flex: 0.2
@@ -22,14 +30,14 @@ export const EventTimeline: FC<Props> = ({ data }) => {
       }}
     >
       {data.map((item) => (
-        <TimeLineItem
-          key={item.id}
-          id={item.id}
-          time={item.time}
-          title={item.title}
-          icon={item.icon}
-          description={item.description}
-        ></TimeLineItem>
+        <a href={`#${item.id}`} key={item.id} onClick={handleClick}>
+          <TimeLineItem
+            time={item.time}
+            title={item.title}
+            icon={item.icon}
+            description={item.description}
+          />
+        </a>
       ))}
     </Timeline>
   )
