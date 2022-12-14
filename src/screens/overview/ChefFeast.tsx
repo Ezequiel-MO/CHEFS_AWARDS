@@ -5,7 +5,7 @@ import { TheVenue } from '../../components/organisms'
 
 export const ChefFeast = () => {
   return (
-    <Paper elevation={0} className='p-2'>
+    <Paper elevation={0} className='p-2 max-w-[900px]'>
       <Typography variant='h1' className='text-med_sand'>
         CHEF FEAST DINNER
       </Typography>

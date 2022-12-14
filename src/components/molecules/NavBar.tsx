@@ -15,10 +15,22 @@ export const Navbar = () => {
 
       <Box className='flex items-center'>
         <NavLink
+          to='/'
+          className={({ isActive }) =>
+            !isActive
+              ? 'font-bold text-center rounded-lg p-1 border-2 border-med_orange ml-2'
+              : 'hidden'
+          }
+        >
+          <Button className='text-white rounded cursor-pointer hover:font-bold '>
+            HOME PAGE
+          </Button>
+        </NavLink>
+        <NavLink
           to='/chef_feast'
           className={({ isActive }) =>
-            !isActive || pathname === '/'
-              ? 'font-bold text-center rounded-lg p-1 border-2 border-med_sand'
+            !isActive
+              ? 'font-bold text-center rounded-lg p-1 border-2 border-med_sand ml-2'
               : 'hidden'
           }
         >
@@ -30,8 +42,8 @@ export const Navbar = () => {
         <NavLink
           to='/awards_dinner'
           className={({ isActive }) =>
-            !isActive || pathname === '/'
-              ? ' font-bold text-center rounded p-1 border-med_blue border-2 ml-2'
+            !isActive
+              ? 'font-bold text-center rounded-lg p-1 border-2 border-med_blue ml-2'
               : 'hidden'
           }
         >

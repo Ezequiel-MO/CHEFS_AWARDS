@@ -5,7 +5,7 @@ import { TimeLine } from '../../components/organisms'
 
 export const AwardsDinner = () => {
   return (
-    <Paper elevation={0} className='p-2'>
+    <Paper elevation={0} className='p-2 max-w-[900px]'>
       <Typography variant='h1' className='text-med_sand'>
         AWARDS DINNER
       </Typography>

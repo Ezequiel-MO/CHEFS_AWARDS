@@ -4,7 +4,7 @@ import { MeetTheTeam } from '../../components/organisms'
 
 export const MainSection = () => {
   return (
-    <Paper elevation={0} className='p-2'>
+    <Paper elevation={0} className='p-2 max-w-[900px]'>
       <Typography variant='h1' className='text-med_sand'>
         The World's 50 Best Restaurants 2023
       </Typography>
