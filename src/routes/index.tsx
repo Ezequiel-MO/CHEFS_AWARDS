@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { AwardsLayout, ChefLayout, PageLayout } from '../components/layouts'
+import { TimeLine } from '../components/organisms'
 import { AwardsDinner, VenueDetails, ChefFeast, MainSection } from '../screens'
-import { TimelineDetails } from '../screens'
 import { ErrorPage } from './error_page'
 
 export const router = createBrowserRouter([
@@ -20,7 +20,10 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <ChefFeast /> },
       { path: 'venue/:id', element: <VenueDetails /> },
-      { path: 'timeline_details/:id', element: <TimelineDetails /> }
+      {
+        path: 'timeline_details',
+        element: <TimeLine type='chef_feast' />
+      }
     ],
     errorElement: <ErrorPage />
   },

@@ -9,11 +9,12 @@ module.exports = {
         dinner_awards: "url('./assets/background_images/dinner_awards_bg.jpg')"
       },
       colors: {
-        med_blue: '#53a4d4',
-        med_blue_light: '#00c6ee',
-        med_sand: '#daa433',
-        med_green: '#79811e',
-        med_green_light: '#95c045'
+        med_blue: '#28a7b6',
+        med_blue_light: '#8cd4d3',
+        med_sand: '#d4ad44',
+        med_orange: '#de5b00',
+        med_green: '#5d6e28',
+        med_purple: '#070c32'
       }
     }
   },

@@ -11,7 +11,7 @@ export const ErrorPage = () => {
         className=' container mx-auto mt-4 md:mt-15 p-5 md:flex md:justify-center text-white-0 flex items-center justify-center '
       >
         <p className='text-8xl font-bold text-med_green'>404 |</p>
-        <p className='text-4xl ml-10 text-med_green_light'>
+        <p className='text-4xl ml-10 text-med_purple'>
           <i>{error.statusText || error.message}</i>
         </p>
       </main>

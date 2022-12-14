@@ -7,7 +7,7 @@ export const ChefLayout = () => {
   return (
     <Box className='flex flex-col min-h-screen bg-chef_feast bg-stretch'>
       <Navbar />
-      <main className='my-[100px] mx-auto max-w-[1440px] px-[30px]'>
+      <main className='xs:my-[30px] mx-auto '>
         <Outlet />
       </main>
     </Box>

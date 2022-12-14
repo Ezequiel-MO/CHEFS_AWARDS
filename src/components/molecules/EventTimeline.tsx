@@ -6,9 +6,9 @@ interface Props {
   data: {
     id: number
     time: string
-    icon: JSX.Element
+    icon: string
     title: string
-    description: string
+    description?: string
   }[]
 }
 
@@ -24,12 +24,12 @@ export const EventTimeline: FC<Props> = ({ data }) => {
       {data.map((item) => (
         <TimeLineItem
           key={item.id}
+          id={item.id}
           time={item.time}
           title={item.title}
+          icon={item.icon}
           description={item.description}
-        >
-          {item.icon}
-        </TimeLineItem>
+        ></TimeLineItem>
       ))}
     </Timeline>
   )

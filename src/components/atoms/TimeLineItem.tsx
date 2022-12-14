@@ -1,5 +1,5 @@
-import { FC } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { FC, useContext } from 'react'
+import { Icon } from '@iconify/react'
 import {
   TimelineConnector,
   TimelineContent,
@@ -9,35 +9,41 @@ import {
   TimelineSeparator
 } from '@mui/lab'
 import { IconButton, Typography } from '@mui/material'
+import { TimelineCtx } from '../../context'
 
 type Props = {
-  children: React.ReactNode
+  icon: string
+  id: number
   title: string
-  description: string
+  description?: string
   time: string
 }
 
 export const TimeLineItem: FC<Props> = ({
-  children,
+  id,
   title,
   description,
+  icon,
   time
 }) => {
-  const navigate = useNavigate()
-  const handleClick = () => navigate(`/chef_feast/timeline_details/${title}`)
-
+  const { setActiveId } = useContext(TimelineCtx)
   return (
-    <TimelineItem>
+    <TimelineItem
+      onClick={() => setActiveId(id)}
+      className='cursor-pointer rounded-md my-2 bg-med_green text-white hover:bg-med_sand'
+    >
       <TimelineOppositeContent sx={{ m: '15px 0' }}>
         {time}
       </TimelineOppositeContent>
       <TimelineSeparator>
         <TimelineDot>
-          <IconButton onClick={handleClick}>{children}</IconButton>
+          <IconButton>
+            <Icon icon={icon} color='#de5b00' />
+          </IconButton>
         </TimelineDot>
         <TimelineConnector />
       </TimelineSeparator>
-      <TimelineContent sx={{ py: '12px', px: 2 }}>
+      <TimelineContent sx={{ py: '20px', px: 2 }}>
         <Typography variant='h6' component='span'>
           {title}
         </Typography>
