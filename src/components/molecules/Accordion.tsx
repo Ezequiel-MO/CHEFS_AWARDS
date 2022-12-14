@@ -10,12 +10,18 @@ import { FC } from 'react'
 interface Props {
   title: string
   id: string
+  backgroundColor?: string
   children: React.ReactNode
 }
 
-export const AccordionParagraph: FC<Props> = ({ title, id, children }) => {
+export const AccordionParagraph: FC<Props> = ({
+  title,
+  id,
+  backgroundColor,
+  children
+}) => {
   return (
-    <Accordion>
+    <Accordion sx={{ backgroundColor: `${backgroundColor}` }}>
       <AccordionSummary expandIcon={<ExpandMoreIcon />} id={id}>
         <Typography
           variant='h1'
