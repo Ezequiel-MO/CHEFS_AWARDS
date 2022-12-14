@@ -4,7 +4,7 @@ import { TimeLineItem } from '../atoms'
 
 interface Props {
   data: {
-    id: number
+    id: string
     time: string
     icon: string
     title: string

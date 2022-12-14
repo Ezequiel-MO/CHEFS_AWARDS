@@ -1,11 +1,13 @@
-import { createContext } from 'react'
+import { createContext, useContext, useState } from 'react'
 
 interface ITimelineContext {
-  activeId: number
-  setActiveId: (id: number) => void
+  activeId: string
+  setActiveId: (id: string) => void
 }
 
 export const TimelineCtx = createContext<ITimelineContext>({
-  activeId: 0,
+  activeId: '',
   setActiveId: () => {}
 })
+
+export const useTimelineCtx = () => useContext(TimelineCtx)

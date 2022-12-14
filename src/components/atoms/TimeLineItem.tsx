@@ -1,4 +1,4 @@
-import { FC, useContext } from 'react'
+import { FC } from 'react'
 import { Icon } from '@iconify/react'
 import {
   TimelineConnector,
@@ -9,11 +9,11 @@ import {
   TimelineSeparator
 } from '@mui/lab'
 import { IconButton, Typography } from '@mui/material'
-import { TimelineCtx } from '../../context'
+import { useTimelineCtx } from '../../context'
 
 type Props = {
   icon: string
-  id: number
+  id: string
   title: string
   description?: string
   time: string
@@ -26,7 +26,7 @@ export const TimeLineItem: FC<Props> = ({
   icon,
   time
 }) => {
-  const { setActiveId } = useContext(TimelineCtx)
+  const { setActiveId } = useTimelineCtx()
   return (
     <TimelineItem
       onClick={() => setActiveId(id)}

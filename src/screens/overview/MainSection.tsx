@@ -6,7 +6,7 @@ export const MainSection = () => {
   return (
     <Paper elevation={0} className='p-2'>
       <Typography variant='h1' className='text-med_sand'>
-        CHEFS AWARDS
+        The World's 50 Best Restaurants 2023
       </Typography>
       <Typography variant='h2' sx={{ mb: 1 }} className='text-med_sand'>
         Presentation

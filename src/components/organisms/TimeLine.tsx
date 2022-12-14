@@ -1,31 +1,30 @@
 import { FC, useState } from 'react'
 import { Grid } from '@mui/material'
 import { EventTimeline } from '../molecules'
-import { CFTimeLineDescriptions } from './chefs_awards/CFTimeLineDescriptions'
-import { TimelineProvider } from '../../context'
-import { TimelineCtx } from '../../context/timeline_context'
+import { CFTimeLineDescriptions } from '../organisms'
+import { TimelineCtx } from '../../context'
 
 const chef_feast_timeline_data = [
   {
-    id: 11,
+    id: 'cf_arrivals',
     time: '06:00 pm',
     icon: 'material-symbols:directions-bus-outline',
     title: 'Arrivals'
   },
   {
-    id: 12,
+    id: 'cf_welcome_drink',
     time: '06:30 pm',
     icon: 'fluent-emoji-high-contrast:cocktail-glass',
     title: 'Welcome Drink'
   },
   {
-    id: 13,
+    id: 'cf_dinner',
     time: '07:15 pm',
     icon: 'material-symbols:tapas-outline',
     title: 'Dinner'
   },
   {
-    id: 14,
+    id: 'cf_entertainment',
     time: '10:00 pm',
     icon: 'jam:dj',
     title: 'Dance Party'
@@ -34,21 +33,21 @@ const chef_feast_timeline_data = [
 
 const dinner_awards_timeline_data = [
   {
-    id: 21,
+    id: 'da_arrivals',
     time: '07:30 am',
     icon: 'material-symbols:directions-bus-outline',
     title: 'Photo Call',
     description: 'W/Shuttle service'
   },
   {
-    id: 22,
+    id: 'da_welcome_drink',
     time: '08:00 pm',
     icon: 'material-symbols:directions-bus-outline',
     title: 'Entertainment',
     description: 'Welcome Fallero - Mascletà'
   },
   {
-    id: 23,
+    id: 'da_dinner',
     time: '08:00 pm',
     icon: 'material-symbols:directions-bus-outline',
     title: 'Cocktail Reception',
@@ -61,7 +60,7 @@ interface Props {
 }
 
 export const TimeLine: FC<Props> = ({ type }) => {
-  const [activeId, setActiveId] = useState(0)
+  const [activeId, setActiveId] = useState('')
   return (
     <TimelineCtx.Provider value={{ activeId, setActiveId }}>
       <Grid container spacing={2} sx={{ width: '100vw' }}>
