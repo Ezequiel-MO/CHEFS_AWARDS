@@ -21,7 +21,7 @@ type Props = {
 export const TimeLineItem: FC<Props> = ({ title, description, icon, time }) => {
   const { setActiveId } = useTimelineCtx()
   return (
-    <TimelineItem className='cursor-pointer rounded-md my-2 bg-med_green text-white hover:bg-med_sand'>
+    <TimelineItem className='cursor-pointer rounded-md my-2 bg-med_green text-white hover:bg-med_sand text-med_white opacity-70'>
       <TimelineOppositeContent sx={{ m: '15px 0' }}>
         {time}
       </TimelineOppositeContent>

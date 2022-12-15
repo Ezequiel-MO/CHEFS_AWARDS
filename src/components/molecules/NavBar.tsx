@@ -1,9 +1,10 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import { Box, Link as MuiLink, Button } from '@mui/material'
-
+import { Icon } from '@iconify/react'
 import Logo from '../../assets/logo.jpg'
 
 export const Navbar = () => {
+  const navigate = useNavigate()
   return (
     <nav className='flex flex-row items-center bg-transparent sticky top-0 z-50'>
       <MuiLink display='flex' alignItems='center' href='/'>
@@ -50,6 +51,16 @@ export const Navbar = () => {
             AWARDS DINNER
           </Button>
         </NavLink>
+
+        <button
+          onClick={() => navigate(-1)}
+          className='flex items-center justify-center uppercase font-bold p-1 border-2 border-med_purple ml-2 text-white rounded cursor-pointer hover:font-bold text-center'
+        >
+          <span>
+            <Icon icon='ic:round-arrow-back' width={30} />
+          </span>
+          Prev Page
+        </button>
       </Box>
     </nav>
   )

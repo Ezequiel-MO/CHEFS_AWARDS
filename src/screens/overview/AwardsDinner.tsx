@@ -1,5 +1,5 @@
 import { Typography, Paper } from '@mui/material'
-import { useMatch } from 'react-router-dom'
+import { Link, useMatch } from 'react-router-dom'
 import { AccordionParagraph } from '../../components/molecules/Accordion'
 import { TimeLine } from '../../components/organisms'
 
@@ -25,8 +25,16 @@ export const AwardsDinner = () => {
             elit
           </Typography>
         </AccordionParagraph>
-        <AccordionParagraph title='A Timeline of the Night' id='panel3a-header'>
-          <TimeLine type='dinner_awards' />
+        <AccordionParagraph
+          title='A Walk through the Night'
+          id='panel3a-header'
+        >
+          <Link
+            to='/awards_dinner/timeline_details'
+            className='hover:underline cursor-pointer'
+          >
+            Peek into the night
+          </Link>
         </AccordionParagraph>
         <AccordionParagraph title='Photo Gallery' id='panel4a-header'>
           <Typography paragraph variant='h6' align='left' className='indent-3'>

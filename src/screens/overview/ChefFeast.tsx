@@ -26,7 +26,7 @@ export const ChefFeast = () => {
         >
           <Link
             to='/chef_feast/timeline_details'
-            className='underline cursor-pointer'
+            className='hover:underline cursor-pointer'
           >
             Peek into the night
           </Link>

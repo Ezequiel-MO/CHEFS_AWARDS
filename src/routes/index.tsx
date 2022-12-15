@@ -1,7 +1,12 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { AwardsLayout, ChefLayout, PageLayout } from '../components/layouts'
-import { TimeLine } from '../components/organisms'
-import { AwardsDinner, VenueDetails, ChefFeast, MainSection } from '../screens'
+import {
+  AwardsDinner,
+  VenueDetails,
+  ChefFeast,
+  MainSection,
+  TimeLine
+} from '../screens'
 import { ErrorPage } from './error_page'
 
 export const router = createBrowserRouter([
@@ -30,7 +35,9 @@ export const router = createBrowserRouter([
   {
     path: '/awards_dinner',
     element: <AwardsLayout />,
-    children: [{ index: true, element: <AwardsDinner /> }],
-    errorElement: <ErrorPage />
+    children: [
+      { index: true, element: <AwardsDinner /> },
+      { path: 'timeline_details', element: <TimeLine type='awards_dinner' /> }
+    ]
   }
 ])

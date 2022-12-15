@@ -1,6 +1,6 @@
+export * from './awards_dinner/ADTimeLineDescriptions'
 export * from './briefing/Briefing'
 export * from './meet_the_team/data'
 export * from './meet_the_team/MeetTheTeam'
-export * from './TimeLine'
 export * from './chefs_awards/CFTimeLineDescriptions'
 export * from './chefs_awards/TheVenue'

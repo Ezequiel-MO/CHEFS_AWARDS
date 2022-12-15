@@ -15,7 +15,8 @@ module.exports = {
       med_sand: '#d4ad44',
       med_orange: '#de5b00',
       med_green: '#5d6e28',
-      med_purple: '#070c32'
+      med_purple: '#070c32',
+      med_white: '#ffffff'
     },
     extend: {
       backgroundImage: {
