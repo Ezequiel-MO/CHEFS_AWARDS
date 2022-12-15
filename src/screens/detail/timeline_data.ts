@@ -42,7 +42,7 @@ export const dinner_awards_timeline_data = [
     id: 'da_dinner',
     time: '08:00 pm',
     icon: 'material-symbols:directions-bus-outline',
-    title: 'Awards Ceremony and Dinner'
+    title: 'Awards & Dinner'
   },
   {
     id: 'da_party',
