@@ -1,7 +1,6 @@
 import { Typography, Paper } from '@mui/material'
-import { Link, useMatch } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { AccordionParagraph } from '../../components/molecules/Accordion'
-import { TimeLine } from '../../components/organisms'
 
 export const AwardsDinner = () => {
   return (
