@@ -1,5 +1,6 @@
 export * from './awards_dinner/ADTimeLineDescriptions'
 export * from './briefing/Briefing'
+export * from './map/Wrapper'
 export * from './meet_the_team/data'
 export * from './meet_the_team/MeetTheTeam'
 export * from './chefs_awards/CFTimeLineDescriptions'

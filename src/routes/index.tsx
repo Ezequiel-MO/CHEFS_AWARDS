@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { AwardsLayout, ChefLayout, PageLayout } from '../components/layouts'
+import { MapWrapper } from '../components/organisms'
 import {
   AwardsDinner,
   VenueDetails,
@@ -39,5 +40,10 @@ export const router = createBrowserRouter([
       { index: true, element: <AwardsDinner /> },
       { path: 'timeline_details', element: <TimeLine type='awards_dinner' /> }
     ]
+  },
+  {
+    path: '/map',
+    element: <PageLayout />,
+    children: [{ index: true, element: <MapWrapper /> }]
   }
 ])

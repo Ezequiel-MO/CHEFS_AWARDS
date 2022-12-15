@@ -27,7 +27,7 @@ export const EventTimeline: FC<Props> = ({ type }) => {
       className='sticky top-24'
       sx={{
         [`& .${timelineOppositeContentClasses.root}`]: {
-          flex: 0.5
+          flex: 0.8
         }
       }}
     >

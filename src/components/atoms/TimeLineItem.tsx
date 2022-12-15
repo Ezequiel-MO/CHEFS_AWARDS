@@ -14,11 +14,10 @@ import { useTimelineCtx } from '../../context'
 type Props = {
   icon: string
   title: string
-  description?: string
   time: string
 }
 
-export const TimeLineItem: FC<Props> = ({ title, description, icon, time }) => {
+export const TimeLineItem: FC<Props> = ({ title, icon, time }) => {
   const { setActiveId } = useTimelineCtx()
   return (
     <TimelineItem className='cursor-pointer rounded-md my-2 bg-med_green text-white hover:bg-med_sand text-med_white opacity-70'>
@@ -34,10 +33,9 @@ export const TimeLineItem: FC<Props> = ({ title, description, icon, time }) => {
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent sx={{ py: '20px', px: 2 }}>
-        <Typography variant='h6' component='span'>
+        <Typography variant='body1' component='span'>
           {title}
         </Typography>
-        <Typography>{description}</Typography>
       </TimelineContent>
     </TimelineItem>
   )
