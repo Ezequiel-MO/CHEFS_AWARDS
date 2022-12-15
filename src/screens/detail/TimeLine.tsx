@@ -15,7 +15,7 @@ export const TimeLine: FC<Props> = ({ type }) => {
   const [activeId, setActiveId] = useState('')
   return (
     <TimelineCtx.Provider value={{ activeId, setActiveId }}>
-      <Grid container spacing={2} sx={{ width: '100vw' }}>
+      <Grid container spacing={2} sx={{ width: '95vw' }}>
         <Grid item xs={12} sm={4}>
           <EventTimeline type={type} />
         </Grid>

@@ -1,5 +1,4 @@
 export * from './detail/VenueDetails'
-export * from './detail/TimeLineDetails'
 export * from './detail/TimeLine'
 export * from './overview/AwardsDinner'
 export * from './overview/ChefFeast'
