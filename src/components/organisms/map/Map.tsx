@@ -12,6 +12,7 @@ type ILocation = {
 }
 
 export const Map = () => {
+  const [map, setMap] = useState<GoogleMap>()
   const [location, setLocation] = useState<ILocation>({
     place: 'Valencia City Center',
     coords: {
@@ -19,7 +20,6 @@ export const Map = () => {
       lng: -0.3763353
     }
   })
-  const mapRef = useRef<GoogleMap>()
 
   const ValenciaCityCenterLocation = useMemo<LatLngLiteral>(
     () => ({ lat: 39.4697065, lng: -0.3763353 }),
@@ -66,12 +66,14 @@ export const Map = () => {
   }
 
   useEffect(() => {
-    if (mapRef.current) {
-      mapRef.current?.panTo(location.coords || ValenciaCityCenterLocation)
+    if (map) {
+      map.panTo(location.coords)
     }
   }, [location])
 
-  const onLoad = useCallback((map: GoogleMap) => (mapRef.current = map), [])
+  const onLoad = useCallback((map: GoogleMap) => {
+    return setMap(map)
+  }, [])
 
   return (
     <div className='flex w-[1000px] h-[400px] xl:h-[600px] -mt-10'>
