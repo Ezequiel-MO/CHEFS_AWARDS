@@ -1,7 +1,7 @@
 import { useState, useMemo, useRef, useCallback, useEffect } from 'react'
 import { GoogleMap, MarkerF, InfoWindowF } from '@react-google-maps/api'
-import './map.css'
 import { Typography } from '@mui/material'
+import './map.css'
 
 type LatLngLiteral = google.maps.LatLngLiteral
 type MapOptions = google.maps.MapOptions
@@ -67,7 +67,7 @@ export const Map = () => {
 
   useEffect(() => {
     if (mapRef.current) {
-      mapRef.current?.panTo(location.coords as LatLngLiteral)
+      mapRef.current?.panTo(location.coords || ValenciaCityCenterLocation)
     }
   }, [location])
 

@@ -44,6 +44,7 @@ export const router = createBrowserRouter([
   {
     path: '/map',
     element: <PageLayout />,
-    children: [{ index: true, element: <MapWrapper /> }]
+    children: [{ index: true, element: <MapWrapper /> }],
+    errorElement: <ErrorPage />
   }
 ])
