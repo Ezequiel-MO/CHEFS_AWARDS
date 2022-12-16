@@ -12,7 +12,7 @@ type ILocation = {
 }
 
 export const Map = () => {
-  const [map, setMap] = useState<GoogleMap>()
+  const [map, setMap] = useState<google.maps.Map>()
   const [location, setLocation] = useState<ILocation>({
     place: 'Valencia City Center',
     coords: {
@@ -71,7 +71,7 @@ export const Map = () => {
     }
   }, [location])
 
-  const onLoad = useCallback((map: GoogleMap) => {
+  const onLoad = useCallback((map: google.maps.Map) => {
     return setMap(map)
   }, [])
 
