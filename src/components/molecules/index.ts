@@ -1,4 +1,5 @@
 export * from './Accordion'
 export * from './EventTimeline'
+export * from './modal/CentralModal'
 export * from './NavBar'
 export * from './TeamMemberCard'

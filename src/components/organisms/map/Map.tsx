@@ -1,4 +1,4 @@
-import { useState, useMemo, useRef, useCallback, useEffect } from 'react'
+import { useState, useMemo, useCallback, useEffect } from 'react'
 import { GoogleMap, MarkerF, InfoWindowF } from '@react-google-maps/api'
 import { Typography } from '@mui/material'
 import './map.css'
@@ -46,10 +46,10 @@ export const Map = () => {
       clickableIcons: false,
       zoomControl: true,
       mapTypeControl: true,
-      streetViewControl: false,
+      streetViewControl: true,
       scaleControl: true,
       rotateControl: false,
-      fullscreenControl: true
+      fullscreenControl: false
     }),
 
     []
@@ -77,8 +77,8 @@ export const Map = () => {
   }, [])
 
   return (
-    <div className='flex w-[1000px] h-[400px] xl:h-[600px] -mt-10'>
-      <div className='controls bg-med_blue opacity-60'>
+    <div className='flex w-full h-full relative'>
+      <div className='controls bg-med_blue opacity-80'>
         <div
           className='cursor-pointer p-2 text-center'
           onClick={() =>
