@@ -12,10 +12,7 @@ export const ADTimelineDescriptions = () => {
         arrivals
         <br />
         <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat
-        reiciendis magnam fugiat amet aliquid voluptas dolor ratione atque
-        eligendi illo molestiae quidem, nesciunt doloremque nobis eius earum nam
-        necessitatibus!
+        6pm to 8pm – Arrival at leisure to Hemisferic​ 6pm to 8pm –​
       </Typography>
 
       <Typography
@@ -27,10 +24,7 @@ export const ADTimelineDescriptions = () => {
         Welcome Drink
         <br />
         <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat
-        reiciendis magnam fugiat amet aliquid voluptas dolor ratione atque
-        eligendi illo molestiae quidem, nesciunt doloremque nobis eius earum nam
-        necessitatibus!
+        6pm to 8pm carpet and photocall
       </Typography>
 
       <Typography
@@ -42,10 +36,10 @@ export const ADTimelineDescriptions = () => {
         Dinner
         <br />
         <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat
-        reiciendis magnam fugiat amet aliquid voluptas dolor ratione atque
-        eligendi illo molestiae quidem, nesciunt doloremque nobis eius earum nam
-        necessitatibus!
+        6pm to 8pm – Continious entertainement in Hemisferic and pools área ​
+        6pm to 8pm – Standing dinner buffet, buffet stations ​ 8pm to 8,30pm –
+        Walk from Hemisferic to Palau de les Arts and entry in Auditori 8,30pm –
+        Award Ceremony starts ​ 8,45pm-10,45 pm – Award Ceremony
       </Typography>
 
       <Typography
@@ -57,10 +51,8 @@ export const ADTimelineDescriptions = () => {
         Dance Party
         <br />
         <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat
-        reiciendis magnam fugiat amet aliquid voluptas dolor ratione atque
-        eligendi illo molestiae quidem, nesciunt doloremque nobis eius earum nam
-        necessitatibus!
+        11pm to 1am – Party in Umbracle in exclusivity for the event ​ 1am –
+        Back to hotels at leisure
       </Typography>
     </Box>
   )

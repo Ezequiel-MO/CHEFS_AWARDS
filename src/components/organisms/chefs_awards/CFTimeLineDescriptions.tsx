@@ -14,10 +14,7 @@ export const CFTimeLineDescriptions = () => {
         arrivals
         <br />
         <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat
-        reiciendis magnam fugiat amet aliquid voluptas dolor ratione atque
-        eligendi illo molestiae quidem, nesciunt doloremque nobis eius earum nam
-        necessitatibus!
+        6pm to 7pm – Arrival by bus​
       </Typography>
 
       <Typography
@@ -29,10 +26,8 @@ export const CFTimeLineDescriptions = () => {
         Welcome Drink
         <br />
         <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat
-        reiciendis magnam fugiat amet aliquid voluptas dolor ratione atque
-        eligendi illo molestiae quidem, nesciunt doloremque nobis eius earum nam
-        necessitatibus!
+        6pm to 7pm – Welcome drink in Barrels area – some drinks and snacks ​
+        7pm – Mascletá ​
       </Typography>
 
       <Typography
@@ -44,10 +39,8 @@ export const CFTimeLineDescriptions = () => {
         Dinner
         <br />
         <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat
-        reiciendis magnam fugiat amet aliquid voluptas dolor ratione atque
-        eligendi illo molestiae quidem, nesciunt doloremque nobis eius earum nam
-        necessitatibus!
+        7pm to 9pm – Standing dinner buffet, show and paella cooking in Porchada
+        área.
       </Typography>
 
       <Typography
@@ -59,10 +52,8 @@ export const CFTimeLineDescriptions = () => {
         Dance Party
         <br />
         <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat
-        reiciendis magnam fugiat amet aliquid voluptas dolor ratione atque
-        eligendi illo molestiae quidem, nesciunt doloremque nobis eius earum nam
-        necessitatibus!
+        9pm – Fireworks and falla “burn” ​ 9,15pm to 11pm – DJ Party ​ 11pm
+        Departure by bus to Valencia ​ necessitatibus!
       </Typography>
     </Box>
   )
