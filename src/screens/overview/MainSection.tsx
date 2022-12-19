@@ -1,6 +1,10 @@
 import { Typography, Paper } from '@mui/material'
-import { AccordionParagraph } from '../../components/molecules/Accordion'
-import { Briefing, Concept, MeetTheTeam } from '../../components/organisms'
+import {
+  Briefing,
+  Concept,
+  MeetTheTeam,
+  Strategic
+} from '../../components/organisms'
 
 export const MainSection = () => {
   return (
@@ -14,15 +18,8 @@ export const MainSection = () => {
       <div>
         <Briefing />
         <Concept />
-        <AccordionParagraph title='Strategic Approach' id='panel3a-header'>
-          <Typography paragraph variant='h6' align='left' className='indent-3'>
-            Info about the Strategic Approach ipsum dolor sit amet consectetur
-            adipisicing elit
-          </Typography>
-        </AccordionParagraph>
-        <AccordionParagraph title='Meet the Team' id='panel4a-header'>
-          <MeetTheTeam />
-        </AccordionParagraph>
+        <Strategic />
+        <MeetTheTeam />
       </div>
     </Paper>
   )

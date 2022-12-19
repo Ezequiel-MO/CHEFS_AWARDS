@@ -1,10 +1,10 @@
 import { Grid } from '@mui/material'
-import { TeamMemberCard } from '../../molecules'
+import { AccordionParagraph, TeamMemberCard } from '../../molecules'
 import { teamMembers } from './data'
 
 export const MeetTheTeam = () => {
   return (
-    <>
+    <AccordionParagraph title='Meet the Team' id='panel4a-header'>
       <Grid container spacing={2}>
         {teamMembers.slice(0, 2).map((member, index) => (
           <Grid item xs={12} sm={4} key={index}>
@@ -20,6 +20,6 @@ export const MeetTheTeam = () => {
           </Grid>
         ))}
       </Grid>
-    </>
+    </AccordionParagraph>
   )
 }

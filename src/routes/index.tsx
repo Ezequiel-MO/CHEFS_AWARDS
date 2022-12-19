@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { AwardsLayout, ChefLayout, PageLayout } from '../components/layouts'
+import { StrategicDetails } from '../components/organisms'
 import {
   AwardsDinner,
   VenueDetails,
@@ -15,6 +16,7 @@ export const router = createBrowserRouter([
     element: <PageLayout />,
     children: [
       { index: true, element: <MainSection /> },
+      { path: 'strategic_approach', element: <StrategicDetails /> },
       { path: 'awards_dinner', element: <AwardsDinner /> }
     ],
     errorElement: <ErrorPage />
