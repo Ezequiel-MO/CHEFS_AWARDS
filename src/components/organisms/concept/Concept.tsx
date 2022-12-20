@@ -5,33 +5,34 @@ export const Concept = () => {
   return (
     <AccordionParagraph title='Concept' id='panel2a-header'>
       <Typography paragraph variant='h6' align='left' className='indent-3'>
-        Una de las principales ciudades del mediterráneo, que ha sabido conjugar
-        lo antiguo con lo moderno, en una simbiosis perfecta, que se alimenta
-        continuamente con las diferencias de las que son testigos sus calles y
-        plazas es Valencia. Por ejemplo, su casco antiguo, está considerado como
-        uno de los más grandes de Europa, hablando del noble pasado de dicha
-        capital, tanto económica, como culturalmente.​ ​ En el extremo opuesto,
-        tenemos la Ciudad de las Artes y las Ciencias. Un complejo futurista
-        diseñado por el reconocido arquitecto Santiago Calatrava ​ ​ Pero
-        Valencia es mucho mas! Las personas que visitan nuestra ciudad, la
-        pueden experimentar a través de los olores (el olor a azahar de los
-        naranjos), de la vista (la luz de la ciudad), el color (por los
-        coloridos edificios y jardines que forman la ciudad) y el sabor
-        (Valencia es la cuna reconocida de “La Paella”, además de tener una rica
-        y exquisita gastronomía)​ ​ ​ Y esto es lo que queremos reflejar en
-        nuestra presentación: las “dos Valencias” ​ ​ ​
+        <strong>Valencia</strong> is one of the main cities of the
+        Mediterranean, which has managed to combine the old with the modern, in
+        a perfect symbiosis, which is constantly fed by the differences that are
+        witnesses of its streets and squares is Valencia. For example, its old
+        town, is considered one of the largest in Europe, speaking of the noble
+        past of said capital, both economically, and culturally.​ ​ On the
+        opposite extreme, we have the City of Arts and Sciences. A futuristic
+        complex designed by the renowned architect Santiago Calatrava ​ ​ But
+        Valencia is much more! The people who visit our city, can experience it
+        through the smells (the smell of orange blossom), the sight (the light
+        of the city), the color (for the colorful buildings and gardens that
+        form the city) and the taste (Valencia is the recognized cradle of
+        "Paella", in addition to having a rich and exquisite gastronomy)​ ​ ​
+        And this is what we want to reflect in our presentation: the "two
+        Valencias" ​ ​ ​ ​
       </Typography>
       <Typography paragraph variant='h6' align='left' className='indent-3'>
-        Hemos diseñados DOS EXPERIENCIAS donde los asistentes descubrirán de
-        primera mano, la ciudad de Valencia, su cultura y sobre todo su
-        gastronomía. ​ ​ En cada una de las cenas, contaremos una HISTORIA, a
-        través de la cual, los asistentes descubrirán la historia de la ciudad a
-        través de su fiesta más emblemática “las Fallas” (Chef feast); y la
-        parte vanguardista en un viaje a través de la Ciudad de las Artes y las
-        Ciencias y su inspiración en la naturaleza (Gala & Adwards ceremony)​ ​
-        Como hilo conductor de las dos experiencias, hemos escogido un elemento
-        que aparece tanto en la parte antigua de la ciudad, como en la moderna:
-        EL TRENCADIS ​
+        The CUTT/events team has designed TWO EXPERIENCES where attendees will
+        discover first hand, the city of Valencia, its culture and above all its
+        gastronomy. ​ ​ In each of the dinners, we will tell a STORY, through
+        which, the attendees will discover the history of the city through its
+        most emblematic festival "Las Fallas" (Chef feast); and the avant-garde
+        in a journey through the City of Arts and Sciences and its inspiration
+        in nature (Gala & Adwards ceremony)​ ​{' '}
+        {/* As a thread conductor of the two
+        experiences, we have chosen an element that appears both in the old part
+        of the city, as in the modern: THE TRENCADIS  */}
+        ​
       </Typography>
     </AccordionParagraph>
   )

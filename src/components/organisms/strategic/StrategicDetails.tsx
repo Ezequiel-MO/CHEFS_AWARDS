@@ -2,8 +2,7 @@ import { Paper, Typography } from '@mui/material'
 import ConceptMontage from '../../../assets/concept/mosaic.svg'
 import ColorPalette from '../../../assets/concept/color_palette.png'
 import { RenderPhotos } from '../../molecules'
-import { old_new_mosaic, traditions } from './photos'
-import { PhotosLayout } from '../../layouts'
+import { old_new_mosaic } from './photos'
 
 export const StrategicDetails = () => {
   return (
@@ -37,10 +36,6 @@ export const StrategicDetails = () => {
         Old and new Trencadis Concept in Valencia
       </Typography>
       <RenderPhotos images={old_new_mosaic} />
-      <Typography paragraph variant='h4' align='left' className='indent-3'>
-        Dinner Concepts
-      </Typography>
-      <PhotosLayout images={traditions} />
     </Paper>
   )
 }

@@ -1,6 +1,7 @@
 import { Typography, Paper } from '@mui/material'
 import { Link } from 'react-router-dom'
 import { AccordionParagraph } from '../../components/molecules/Accordion'
+import { ADDinnerConcept } from '../../components/organisms'
 
 export const AwardsDinner = () => {
   return (
@@ -12,12 +13,7 @@ export const AwardsDinner = () => {
         Overview
       </Typography>
       <div>
-        <AccordionParagraph title='Dinner Concept' id='panel1a-header'>
-          <Typography paragraph variant='h6' align='left' className='indent-3'>
-            Info about the briefing ipsum dolor sit amet consectetur adipisicing
-            elit
-          </Typography>
-        </AccordionParagraph>
+        <ADDinnerConcept />
         <AccordionParagraph title='The Venue' id='panel2a-header'>
           <Typography paragraph variant='h6' align='left' className='indent-3'>
             Info about the Concept ipsum dolor sit amet consectetur adipisicing
