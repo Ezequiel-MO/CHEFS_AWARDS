@@ -47,48 +47,106 @@ export const Briefing = () => {
           In this presentation, we will work on our creative concept proposal
           for the 2 events within the programmed both listed below:
         </p>
-        <div className='min-h-52 grid grid-cols-none xs:grid-cols-2 gap-4 px-5 mb-5'>
-          <div className='bg-[#fff] rounded-xl shadow-sm p-2'>
-            <h3 className='text-med_green text-xl font-bold'>Chef's Feast</h3>
-            <ul>
-              <li>Attendance : approx 250 pax</li>
-              <li>
-                Who Attends: Dining experience for all restaurants that appear
-                on the 50 Best Restaurants 2023 list - Media free event
-              </li>
-              <li>Time : 7pm - 10pm</li>
-              <li>Location : Outside/rural/Orange fields</li>
-              <li>Theme : Chef Feast Dinner w/ live cooking stations</li>
-              <li>
-                Menu : Standing dinner to showcase local produce , landscape ,
-                lifestyle, etc...
-              </li>
-              <li>
-                Entertainment : Lots of entertainment, laughter, fun and food
-              </li>
-            </ul>
+        <div className='min-h-52 px-5 my-5 flex cursor-pointer'>
+          <div className='bg-[#fff] rounded-md shadow-xl p-5 border border-l-med_purple hover:transform hover:scale-110 hover:-rotate-1 hover:transition-all hover:duration-500'>
+            <div className='mb-2'>
+              <h3 className='text-med_green text-xl font-bold'>Chefs' Feast</h3>
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <td className='uppercase font-bold w-40'>Attendance :</td>
+                  <td>approx 250 pax</td>
+                </tr>
+                <tr>
+                  <td className='uppercase font-bold w-40'>Who attends :</td>
+                  <td>
+                    all restaurants that appear on the 50 Best Restaurants 2023
+                    list - Media free event
+                  </td>
+                </tr>
+                <tr>
+                  <td className='uppercase font-bold w-40'>time :</td>
+                  <td>7pm - 10pm</td>
+                </tr>
+                <tr>
+                  <td className='uppercase font-bold w-40'>Location :</td>
+                  <td>Outside/rural/Orange fields</td>
+                </tr>
+                <tr>
+                  <td className='uppercase font-bold w-40'>Theme :</td>
+                  <td>Chef Feast Dinner w/ live cooking stations</td>
+                </tr>
+                <tr>
+                  <td className='uppercase font-bold w-40'>Menu :</td>
+                  <td>
+                    Standing dinner to showcase local produce , landscape ,
+                    lifestyle, etc...
+                  </td>
+                </tr>
+                <tr>
+                  <td className='uppercase font-bold w-40'>Entertainment :</td>
+                  <td>Lots of entertainment, laughter, fun and food</td>
+                </tr>
+              </tbody>
+            </table>
+
+            {/* footer */}
+            <div className='mt-4'>
+              <p className='text-sm text-med_sand italic text-center hover:underline hover:cursor-pointer'>
+                Go to the Event Timeline
+              </p>
+            </div>
           </div>
-          <div className='bg-[#fff] rounded-xl shadow-sm p-2'>
-            <h3 className='text-med_green text-xl font-bold'>
-              The World's Best Restaurants Awards Ceremony
-            </h3>
-            <ul>
-              <li>Attendance : approx 1,200 pax</li>
-              <li>
-                Who Attends:VIPs, World's 50 Best Restaurants 2023 list, media
-                and sponsors
-              </li>
-              <li>Time : 6pm - 10pm</li>
-              <li>Location : Ciutat de les Arts i les Ciencies</li>
-              <li>
-                Theme : Gala Event, Awards Ceremony, after party and press
-                conference
-              </li>
-              <li>Menu : Gala Event</li>
-              <li>
-                Entertainment : Shows and entertainment throughout the event
-              </li>
-            </ul>
+          <div className='bg-[#fff] rounded-md shadow-xl p-5 border border-l-med_purple -ml-96 hover:transform hover:scale-110 hover:-rotate-1 hover:transition-all hover:duration-500'>
+            <div className='mb-2'>
+              <h3 className='text-med_green text-xl font-bold'>
+                The World's Best Restaurants Awards
+              </h3>
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <td className='uppercase font-bold w-40'>Attendance :</td>
+                  <td>approx 1,200 pax</td>
+                </tr>
+                <tr>
+                  <td className='uppercase font-bold w-40'>Who attends :</td>
+                  <td>
+                    VIPs, World's 50 Best Restaurants 2023 list, media and
+                    sponsors
+                  </td>
+                </tr>
+                <tr>
+                  <td className='uppercase font-bold w-40'>time :</td>
+                  <td>6pm - 10pm</td>
+                </tr>
+                <tr>
+                  <td className='uppercase font-bold w-40'>Location :</td>
+                  <td>Ciutat de les Arts i les Ciencies</td>
+                </tr>
+                <tr>
+                  <td className='uppercase font-bold w-40'>Theme :</td>
+                  <td>
+                    Gala Event, Awards Ceremony, after party and press
+                    conference
+                  </td>
+                </tr>
+                <tr>
+                  <td className='uppercase font-bold w-40'>Menu :</td>
+                  <td>Gala Event</td>
+                </tr>
+                <tr>
+                  <td className='uppercase font-bold w-40'>Entertainment :</td>
+                  <td> Shows and entertainment throughout the event</td>
+                </tr>
+              </tbody>
+            </table>
+            <div className='mt-4'>
+              <p className='text-sm text-med_sand italic text-center hover:underline hover:cursor-pointer'>
+                Go to the Event Timeline
+              </p>
+            </div>
           </div>
         </div>
       </div>
