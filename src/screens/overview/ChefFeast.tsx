@@ -1,7 +1,11 @@
 import { Typography, Paper } from '@mui/material'
 import { Link } from 'react-router-dom'
 import { AccordionParagraph } from '../../components/molecules/Accordion'
-import { CFDinnerConcept, TheVenue } from '../../components/organisms'
+import {
+  CFDinnerConcept,
+  CFOtherVenues,
+  TheVenue
+} from '../../components/organisms'
 
 export const ChefFeast = () => {
   return (
@@ -32,15 +36,7 @@ export const ChefFeast = () => {
             elit
           </Typography>
         </AccordionParagraph>
-        <AccordionParagraph
-          title='Other Venues w/ similar concept'
-          id='panel5a-header'
-        >
-          <Typography paragraph variant='h6' align='left' className='indent-3'>
-            Info about the Team, ipsum dolor sit amet consectetur adipisicing
-            elit
-          </Typography>
-        </AccordionParagraph>
+        <CFOtherVenues />
       </div>
     </Paper>
   )

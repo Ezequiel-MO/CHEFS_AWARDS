@@ -10,10 +10,10 @@ interface Props {
 export const RenderPhotos = ({ images }: Props) => {
   return (
     <div>
-      <div className='w-full flex justify-start flex-wrap pt-10'>
+      <div className='w-full flex justify-center'>
         {images.map((images, index) => (
           <div
-            className='m-2 p-2 scale-125 hover:scale-150 ease-in duration-200 hover:z-50'
+            className='m-2 px-2 scale-125 hover:scale-150 ease-in duration-200 hover:z-50'
             key={index}
           >
             <img
