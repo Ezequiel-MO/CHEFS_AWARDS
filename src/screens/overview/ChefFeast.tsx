@@ -2,6 +2,7 @@ import { Typography, Paper } from '@mui/material'
 import { Link } from 'react-router-dom'
 import { AccordionParagraph } from '../../components/molecules/Accordion'
 import {
+  CFBudget,
   CFDinnerConcept,
   CFOtherVenues,
   TheVenue
@@ -30,11 +31,8 @@ export const ChefFeast = () => {
             Peek into the night
           </Link>
         </AccordionParagraph>
-        <AccordionParagraph title='Photo Gallery' id='panel4a-header'>
-          <Typography paragraph variant='h6' align='left' className='indent-3'>
-            Info about the Team, ipsum dolor sit amet consectetur adipisicing
-            elit
-          </Typography>
+        <AccordionParagraph title='Budget' id='panel4a-header'>
+          <CFBudget />
         </AccordionParagraph>
         <CFOtherVenues />
       </div>
