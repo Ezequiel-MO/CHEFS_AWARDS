@@ -1,4 +1,5 @@
 import { Paper, Typography, Box } from '@mui/material'
+import { LocationWrapper } from '../../components/organisms'
 
 export const CFVenueDetails = () => {
   return (
@@ -11,6 +12,7 @@ export const CFVenueDetails = () => {
       </Box>
       <Box>
         <Typography variant='h2'>Location</Typography>
+        <LocationWrapper venue='Campo Anibal' />
       </Box>
       <Box>
         <Typography variant='h2'>Photo Gallery</Typography>
