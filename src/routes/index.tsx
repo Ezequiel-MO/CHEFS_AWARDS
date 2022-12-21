@@ -2,8 +2,9 @@ import { createBrowserRouter } from 'react-router-dom'
 import { AwardsLayout, ChefLayout, PageLayout } from '../components/layouts'
 import { StrategicDetails } from '../components/organisms'
 import {
+  ADVenueDetails,
   AwardsDinner,
-  VenueDetails,
+  CFVenueDetails,
   ChefFeast,
   MainSection,
   TimeLine
@@ -26,7 +27,7 @@ export const router = createBrowserRouter([
     element: <ChefLayout />,
     children: [
       { index: true, element: <ChefFeast /> },
-      { path: 'venue/:id', element: <VenueDetails /> },
+      { path: 'venue_details', element: <CFVenueDetails /> },
       {
         path: 'timeline_details',
         element: <TimeLine type='chef_feast' />
@@ -39,7 +40,9 @@ export const router = createBrowserRouter([
     element: <AwardsLayout />,
     children: [
       { index: true, element: <AwardsDinner /> },
+      { path: 'venue_details', element: <ADVenueDetails /> },
       { path: 'timeline_details', element: <TimeLine type='awards_dinner' /> }
-    ]
+    ],
+    errorElement: <ErrorPage />
   }
 ])

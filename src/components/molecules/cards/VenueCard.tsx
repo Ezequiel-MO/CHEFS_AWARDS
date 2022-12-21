@@ -11,7 +11,7 @@ interface Props {
 export const VenueCard = ({ image, index }: Props) => {
   return (
     <Card
-      className={`flex flex-col border border-med_sand shadow-xl h-[500px] w-96 rounded-xl hover:transform hover:scale-110 hover:transition-all hover:duration-500 ${
+      className={`flex flex-col border border-med_sand shadow-xl h-[500px] w-96 rounded-xl hover:transform hover:-translate-y-4 hover:transition-all hover:duration-300 ${
         index !== 0 && '-ml-60'
       }`}
     >

@@ -18,7 +18,7 @@ export const ChefFeast = () => {
       </Typography>
       <div>
         <CFDinnerConcept />
-        <TheVenue />
+        <TheVenue event='chef_feast' />
         <AccordionParagraph
           title='A Walk through the Night'
           id='panel3a-header'
