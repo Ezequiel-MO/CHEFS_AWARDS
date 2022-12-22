@@ -1,6 +1,7 @@
 export * from './all_map/Wrapper'
 export * from './awards_dinner/ADDinnerConcept'
 export * from './awards_dinner/ADTimeLineDescriptions'
+export * from './awards_dinner/budget/ADBudget'
 export * from './briefing/Briefing'
 export * from './concept/photos'
 export * from './chefs_awards/budget/CFBudget'

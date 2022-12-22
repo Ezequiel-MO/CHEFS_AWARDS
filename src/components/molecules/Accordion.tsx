@@ -11,12 +11,14 @@ interface Props {
   title: string
   id: string
   backgroundColor?: string
+  event?: string
   children: React.ReactNode
 }
 
 export const AccordionParagraph: FC<Props> = ({
   title,
   id,
+  event,
   backgroundColor,
   children
 }) => {
@@ -25,7 +27,9 @@ export const AccordionParagraph: FC<Props> = ({
       <AccordionSummary expandIcon={<ExpandMoreIcon />} id={id}>
         <Typography
           variant='h1'
-          className='text-med_green hover:text-med_purple'
+          className={`${
+            event === 'da' ? 'text-med_blue' : 'text-med_green'
+          } hover:text-med_purple`}
         >
           {title}
         </Typography>
