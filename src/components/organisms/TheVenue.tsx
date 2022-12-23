@@ -8,7 +8,7 @@ interface TheVenueProps {
 
 export const TheVenue = ({ event }: TheVenueProps) => {
   return (
-    <AccordionParagraph title='The Venue' id='panel2a-header' event='da'>
+    <AccordionParagraph title='The Venue' id='panel2a-header' event={event}>
       <Typography paragraph variant='h6' align='left' className='indent-3'>
         Info about the venue
       </Typography>

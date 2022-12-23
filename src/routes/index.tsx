@@ -4,6 +4,7 @@ import { StrategicDetails } from '../components/organisms'
 import {
   ADVenueDetails,
   AwardsDinner,
+  CFLineBudget,
   CFVenueDetails,
   ChefFeast,
   MainSection,
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <ChefFeast /> },
       { path: 'venue_details', element: <CFVenueDetails /> },
+      {
+        path: 'budget',
+        element: <CFLineBudget />
+      },
       {
         path: 'timeline_details',
         element: <TimeLine type='chef_feast' />

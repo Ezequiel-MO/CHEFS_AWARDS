@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Box, Typography } from '@mui/material'
 import { DataGrid, GridToolbar } from '@mui/x-data-grid'
 import { GridColDef, GridRowsProp } from '@mui/x-data-grid/models'
@@ -124,10 +125,14 @@ export const CFBudget = () => {
       <Typography variant='h6' className='text-center font-bold'>
         Below you can find the budget for the event, broken down by category
       </Typography>
-
-      <p className='hover:underline italic my-2 text-center cursor-pointer font-bold text-med_purple'>
-        Please click here to go to a line by line breakdown of the budget
-      </p>
+      <div className='text-center my-2'>
+        <Link
+          to='/chef_feast/budget'
+          className='hover:underline italic my-2 cursor-pointer font-bold text-med_sand'
+        >
+          Please click here to go to a line by line breakdown of the budget
+        </Link>
+      </div>
       <Box
         className='p-2'
         sx={{
