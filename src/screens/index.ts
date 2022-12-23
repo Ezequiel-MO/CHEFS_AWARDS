@@ -1,4 +1,5 @@
 export * from './detail/ADVenueDetails'
+export * from './detail/Budget'
 export * from './detail/LineBudget'
 export * from './detail/CFVenueDetails'
 export * from './detail/timeline_data'
