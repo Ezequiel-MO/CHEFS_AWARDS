@@ -4,7 +4,7 @@ import { StrategicDetails } from '../components/organisms'
 import {
   ADVenueDetails,
   AwardsDinner,
-  CFLineBudget,
+  LineBudget,
   CFVenueDetails,
   ChefFeast,
   MainSection,
@@ -31,7 +31,7 @@ export const router = createBrowserRouter([
       { path: 'venue_details', element: <CFVenueDetails /> },
       {
         path: 'budget',
-        element: <CFLineBudget />
+        element: <LineBudget event='cf' />
       },
       {
         path: 'timeline_details',
@@ -46,6 +46,10 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <AwardsDinner /> },
       { path: 'venue_details', element: <ADVenueDetails /> },
+      {
+        path: 'budget',
+        element: <LineBudget event='da' />
+      },
       { path: 'timeline_details', element: <TimeLine type='awards_dinner' /> }
     ],
     errorElement: <ErrorPage />

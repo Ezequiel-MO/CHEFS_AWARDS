@@ -1,4 +1,6 @@
 export * from './Accordion'
+export * from './budget/BudgetBody'
+export * from './budget/BudgetFooter'
 export * from './budget/BudgetTableHead'
 export * from './cards/VenueCard'
 export * from './EventTimeline'
