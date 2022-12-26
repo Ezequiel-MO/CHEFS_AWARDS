@@ -14,7 +14,7 @@ export const AwardsDinner = () => {
       </Typography>
       <div>
         <ADDinnerConcept />
-        <TheVenue event='da' />
+        <TheVenue event='awards_dinner' />
         <AccordionParagraph
           title='A Walk through the Night'
           id='panel3a-header'
