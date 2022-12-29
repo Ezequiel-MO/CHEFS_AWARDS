@@ -15,7 +15,6 @@ export const BudgetBody = ({ event }: Props) => {
     <TableBody>
       {data.map((row) => (
         <TableRow key={row.service}>
-          <TableCell width='10%' className=' !bg-med_white !bg-opacity-50' />
           <TableCell width='20%' className='!bg-med_white !bg-opacity-50'>
             {row.category}
           </TableCell>
@@ -27,6 +26,9 @@ export const BudgetBody = ({ event }: Props) => {
           </TableCell>
           <TableCell width='15%' className='!bg-med_white !bg-opacity-50'>
             {accounting.formatMoney(row.unitPrice, '€', 0, ',', '.')}
+          </TableCell>
+          <TableCell width='10%' className=' !bg-med_white !bg-opacity-50'>
+            {accounting.formatMoney(row.totalWithoutVAT, '€', 0, ',', '.')}
           </TableCell>
           <TableCell width='15%' className='!bg-med_white !bg-opacity-50'>
             {accounting.formatMoney(row.total, '€', 0, ',', '.')}

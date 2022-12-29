@@ -10,10 +10,6 @@ export const BudgetTableHead = ({ event }: Props) => {
     <TableHead>
       <TableRow>
         <TableCell
-          width='10%'
-          className={`!font-bold ${bg_color} !bg-opacity-70 !text-med_white`}
-        />
-        <TableCell
           width='20%'
           className={`!font-bold ${bg_color} !bg-opacity-70 !text-med_white`}
         >
@@ -36,6 +32,12 @@ export const BudgetTableHead = ({ event }: Props) => {
           className={`!font-bold ${bg_color} !bg-opacity-70 !text-med_white`}
         >
           Unit cost w/VAT
+        </TableCell>
+        <TableCell
+          width='10%'
+          className={`!font-bold ${bg_color} !bg-opacity-70 !text-med_white`}
+        >
+          Total cost without VAT
         </TableCell>
         <TableCell
           width='15%'
