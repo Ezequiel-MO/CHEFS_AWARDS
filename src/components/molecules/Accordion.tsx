@@ -28,7 +28,7 @@ export const AccordionParagraph: FC<Props> = ({
         <Typography
           variant='h1'
           className={`${
-            event === 'da' ? 'text-med_blue' : 'text-med_green'
+            event === 'awards_dinner' ? 'text-med_blue' : 'text-med_green'
           } hover:text-med_purple`}
         >
           {title}

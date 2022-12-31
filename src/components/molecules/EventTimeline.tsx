@@ -27,13 +27,18 @@ export const EventTimeline: FC<Props> = ({ type }) => {
       className='sticky top-24'
       sx={{
         [`& .${timelineOppositeContentClasses.root}`]: {
-          flex: 0.8
+          flex: 0.6
         }
       }}
     >
       {data.map((item) => (
         <a href={`#${item.id}`} key={item.id} onClick={handleClick}>
-          <TimeLineItem time={item.time} title={item.title} icon={item.icon} />
+          <TimeLineItem
+            time={item.time}
+            title={item.title}
+            icon={item.icon}
+            type={type}
+          />
         </a>
       ))}
     </Timeline>

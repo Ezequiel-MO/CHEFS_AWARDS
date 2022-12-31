@@ -8,7 +8,7 @@ export const ADDinnerConcept = () => {
     <AccordionParagraph
       title='Sources of Inspiration'
       id='panel2a-header'
-      event='da'
+      event='awards_dinner'
     >
       <Typography paragraph variant='h6' align='left' className='indent-3'>
         <strong>For this dinner</strong> we have been inspired by Valencia's

@@ -1,5 +1,7 @@
 import { Paper, Typography, Box } from '@mui/material'
 import { LocationWrapper } from '../../components/organisms'
+import Slide1 from '../../assets/hemisferic/slide1.png'
+import Slide2 from '../../assets/hemisferic/slide2.png'
 
 export const ADVenueDetails = () => {
   return (
@@ -37,6 +39,8 @@ export const ADVenueDetails = () => {
       </Box>
       <Box>
         <Typography variant='h2'>Photo Gallery</Typography>
+        <img src={Slide1} alt='slide1' />
+        <img src={Slide2} alt='slide2' />
       </Box>
     </Paper>
   )

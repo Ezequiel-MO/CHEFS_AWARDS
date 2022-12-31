@@ -18,7 +18,7 @@ export const chef_feast_timeline_data = [
     title: 'Dinner'
   },
   {
-    id: 'cf_entertainment',
+    id: 'cf_party',
     time: '10:00 pm',
     icon: 'jam:dj',
     title: 'Dance Party'

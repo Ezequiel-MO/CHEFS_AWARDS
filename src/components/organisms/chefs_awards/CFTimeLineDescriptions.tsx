@@ -1,60 +1,49 @@
 import { Box, Typography } from '@mui/material'
-import { useTimelineCtx } from '../../../context'
+import Slide1 from '../../../assets/chef_awards/slides/slide1.png'
+import Slide2 from '../../../assets/chef_awards/slides/slide2.png'
+import Slide3 from '../../../assets/chef_awards/slides/slide3.png'
+import Slide4 from '../../../assets/chef_awards/slides/slide4.png'
+import Slide5 from '../../../assets/chef_awards/slides/slide5.png'
+import Slide6 from '../../../assets/chef_awards/slides/slide6.png'
+import Slide7 from '../../../assets/chef_awards/slides/slide7.png'
+import Slide8 from '../../../assets/chef_awards/slides/slide8.png'
+import Slide9 from '../../../assets/chef_awards/slides/slide9.png'
+import Slide10 from '../../../assets/chef_awards/slides/slide10.png'
+import Slide11 from '../../../assets/chef_awards/slides/slide11.png'
 
 export const CFTimeLineDescriptions = () => {
-  const { activeId } = useTimelineCtx()
   return (
     <Box>
       <Typography
         variant='h2'
-        sx={{ mb: 1, height: '80vh' }}
+        sx={{ mb: 1, height: '10vh' }}
         className='text-med_purple'
         id='cf_arrivals'
       >
         arrivals
         <br />
         <br />
-        6pm to 7pm – Arrival by bus​
+        6pm to 8pm – Arrival in Campo Anibal
       </Typography>
-
-      <Typography
-        variant='h2'
-        sx={{ mb: 1, height: '80vh' }}
-        className='text-med_purple'
-        id='cf_welcome_drink'
-      >
-        Welcome Drink
-        <br />
-        <br />
-        6pm to 7pm – Welcome drink in Barrels area – some drinks and snacks ​
-        7pm – Mascletá ​
-      </Typography>
-
-      <Typography
-        variant='h2'
-        sx={{ mb: 1, height: '80vh' }}
-        className='text-med_purple'
-        id='cf_dinner'
-      >
-        Dinner
-        <br />
-        <br />
-        7pm to 9pm – Standing dinner buffet, show and paella cooking in Porchada
-        área.
-      </Typography>
-
-      <Typography
-        variant='h2'
-        sx={{ mb: 1, height: '80vh' }}
-        className='text-med_purple'
-        id='cf_entertainment'
-      >
-        Dance Party
-        <br />
-        <br />
-        9pm – Fireworks and falla “burn” ​ 9,15pm to 11pm – DJ Party ​ 11pm
-        Departure by bus to Valencia ​ necessitatibus!
-      </Typography>
+      <div>
+        <img src={Slide1} alt='slide_1' />
+        <img src={Slide2} alt='slide_2' />
+        <img src={Slide3} alt='slide_3' />
+        <div id='cf_welcome_drink'>
+          <img src={Slide4} alt='slide_4' />
+        </div>
+        <img src={Slide5} alt='slide_5' />
+        <div id='cf_dinner'>
+          <img src={Slide6} alt='slide_6' />
+        </div>
+        <img src={Slide7} alt='slide_7' />
+        <img src={Slide8} alt='slide_8' />
+        <img src={Slide9} alt='slide_9' />
+        <div id='cf_party'>
+          <img src={Slide10} alt='slide_10' />
+        </div>
+        <img src={Slide11} alt='slide_11' />
+      </div>
     </Box>
   )
 }

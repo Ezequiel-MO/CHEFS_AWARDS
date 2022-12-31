@@ -9,18 +9,23 @@ import {
   TimelineSeparator
 } from '@mui/lab'
 import { IconButton, Typography } from '@mui/material'
-import { useTimelineCtx } from '../../context'
 
 type Props = {
   icon: string
   title: string
   time: string
+  type: 'chef_feast' | 'awards_dinner'
 }
 
-export const TimeLineItem: FC<Props> = ({ title, icon, time }) => {
-  const { setActiveId } = useTimelineCtx()
+export const TimeLineItem: FC<Props> = ({ title, icon, time, type }) => {
   return (
-    <TimelineItem className='cursor-pointer rounded-md my-2 bg-med_green text-white hover:bg-med_sand text-med_white opacity-70'>
+    <TimelineItem
+      className={`cursor-pointer rounded-md my-2 ${
+        type === 'chef_feast'
+          ? 'bg-med_green hover:bg-med_sand'
+          : 'bg-med_blue hover:bg-med_blue_light'
+      } text-white  text-med_white opacity-70`}
+    >
       <TimelineOppositeContent sx={{ m: '15px 0' }}>
         {time}
       </TimelineOppositeContent>

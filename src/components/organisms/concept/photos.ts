@@ -6,7 +6,6 @@ import New1 from '../../../assets/concept/new_trencadis/new_1.jpg'
 import New2 from '../../../assets/concept/new_trencadis/new_2.jpg'
 import New3 from '../../../assets/concept/new_trencadis/new_3.jpg'
 import New4 from '../../../assets/concept/new_trencadis/new_4.jpeg'
-import New5 from '../../../assets/concept/new_trencadis/new_5.jpg'
 
 export const old_mosaic = [
   {

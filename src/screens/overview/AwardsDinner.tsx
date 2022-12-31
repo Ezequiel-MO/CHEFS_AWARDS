@@ -18,7 +18,7 @@ export const AwardsDinner = () => {
         <AccordionParagraph
           title='A Walk through the Night'
           id='panel3a-header'
-          event='da'
+          event='awards_dinner'
         >
           <Link
             to='/awards_dinner/timeline_details'
@@ -27,7 +27,11 @@ export const AwardsDinner = () => {
             Peek into the night
           </Link>
         </AccordionParagraph>
-        <AccordionParagraph title='Budget' id='panel4a-header' event='da'>
+        <AccordionParagraph
+          title='Budget'
+          id='panel4a-header'
+          event='awards_dinner'
+        >
           <ADBudget />
         </AccordionParagraph>
       </div>
