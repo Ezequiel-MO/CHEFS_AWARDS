@@ -1,6 +1,8 @@
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { AccordionParagraph } from '../../molecules'
 import { CentralModal } from '../../molecules'
-import { useState } from 'react'
+import './style.css'
 
 export const Briefing = () => {
   const [modal, setModal] = useState(false)
@@ -12,7 +14,7 @@ export const Briefing = () => {
       backgroundColor='#FAFAFA'
       event='main'
     >
-      <div className='flex flex-col'>
+      <div className='flex flex-col p-5'>
         <p>
           The World’s 50 Best Restaurants Awards Ceremony is the most
           prestigious event in the global restaurant industry calendar. It is a
@@ -23,14 +25,14 @@ export const Briefing = () => {
           The event programme is spread across 4 to 5 days and includes, but is
           not limited to:{' '}
         </p>{' '}
-        <ul>
+        <ol>
           <li> Welcome to Country Dinner,</li>
           <li> #50BestTalks,</li>
           <li> Pre awards Press Conference, </li>
           <li> Chefs’ Feast, </li>
-          <li> Recovery Brunch and </li>
+          <li> Recovery Brunch </li>
           <li> The World’s 50 Best Restaurants Awards Ceremony. </li>
-        </ul>
+        </ol>
         <p>
           Each events’ concept is detailed, they are all on invitation only, The
           programme culminates with the Awards Ceremony – a livestreamed live
@@ -94,9 +96,11 @@ export const Briefing = () => {
 
             {/* footer */}
             <div className='mt-4'>
-              <p className='text-sm text-med_sand italic text-center hover:underline hover:cursor-pointer'>
-                Go to the Event Timeline
-              </p>
+              <Link to='/chef_feast/timeline_details'>
+                <p className='text-sm text-med_sand italic text-center hover:underline hover:cursor-pointer'>
+                  Go to the Event Timeline
+                </p>
+              </Link>
             </div>
           </div>
           <div className='bg-[#fff] rounded-md shadow-xl p-5 border border-l-med_purple -ml-96 hover:transform hover:scale-110 hover:-rotate-1 hover:transition-all hover:duration-500'>
@@ -144,9 +148,11 @@ export const Briefing = () => {
               </tbody>
             </table>
             <div className='mt-4'>
-              <p className='text-sm text-med_sand italic text-center hover:underline hover:cursor-pointer'>
-                Go to the Event Timeline
-              </p>
+              <Link to='/awards_dinner/timeline_details'>
+                <p className='text-sm text-med_sand italic text-center hover:underline hover:cursor-pointer'>
+                  Go to the Event Timeline
+                </p>
+              </Link>
             </div>
           </div>
         </div>

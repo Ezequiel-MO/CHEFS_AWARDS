@@ -1,0 +1,42 @@
+ol {
+  counter-reset: li;
+  list-style: none;
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+ol li {
+  position: relative;
+  display: block;
+  padding: 0.4em 0.4em 0.4em 2em;
+  margin: 0.5em 0;
+  background: #dad2ca;
+  color: #444;
+  text-decoration: none;
+  border-radius: 0.3em;
+  transition: 0.3s ease-out;
+}
+
+ol li:hover {
+  background: #e9e4e0;
+}
+/* ol li:hover:before {
+  transform: rotate(360deg);
+} */
+ol li:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1em;
+  top: 50%;
+  margin-top: -1em;
+  background: #ebd287;
+  height: 2em;
+  width: 2em;
+  line-height: 1.5em;
+  border: 0.3em solid #fff;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all 0.3s ease-out;
+}

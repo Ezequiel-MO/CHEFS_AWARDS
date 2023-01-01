@@ -11,8 +11,7 @@ import {
   CFVenueDetails,
   ChefFeast,
   MainSection,
-  TimeLine,
-  Budget
+  TimeLine
 } from '../screens'
 import { ErrorPage } from './error_page'
 
