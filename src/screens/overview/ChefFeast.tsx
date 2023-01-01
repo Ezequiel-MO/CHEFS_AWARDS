@@ -1,8 +1,8 @@
 import { Typography, Paper } from '@mui/material'
 import { Link } from 'react-router-dom'
 import { AccordionParagraph } from '../../components/molecules/Accordion'
+import { Budget } from '../detail/Budget'
 import {
-  CFBudget,
   CFDinnerConcept,
   CFOtherVenues,
   TheVenue
@@ -32,7 +32,7 @@ export const ChefFeast = () => {
           </Link>
         </AccordionParagraph>
         <AccordionParagraph title='Budget' id='panel4a-header'>
-          <CFBudget />
+          <Budget event='cf' />
         </AccordionParagraph>
         <CFOtherVenues />
       </div>

@@ -3,7 +3,7 @@ import accounting from 'accounting'
 import {
   tableDataCF,
   tableDataDA
-} from '../../../screens/detail/cf_budget/CF_table_data'
+} from '../../../screens/detail/budget/table_data'
 
 type Props = {
   event: string
@@ -21,14 +21,11 @@ export const BudgetBody = ({ event }: Props) => {
           <TableCell width='35%' className='!bg-med_white !bg-opacity-50'>
             {row.service}
           </TableCell>
-          <TableCell width='5%' className='!bg-med_white !bg-opacity-50'>
-            {row.quantity}
-          </TableCell>
           <TableCell width='15%' className='!bg-med_white !bg-opacity-50'>
-            {accounting.formatMoney(row.unitPrice, '€', 0, ',', '.')}
+            {accounting.formatMoney(row.totalWithoutVAT, '€', 0, ',', '.')}
           </TableCell>
           <TableCell width='10%' className=' !bg-med_white !bg-opacity-50'>
-            {accounting.formatMoney(row.totalWithoutVAT, '€', 0, ',', '.')}
+            {accounting.formatMoney(row.taxes, '€', 0, ',', '.')}
           </TableCell>
           <TableCell width='15%' className='!bg-med_white !bg-opacity-50'>
             {accounting.formatMoney(row.total, '€', 0, ',', '.')}

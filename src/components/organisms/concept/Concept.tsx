@@ -4,7 +4,7 @@ import { new_mosaic, old_mosaic } from './photos'
 
 export const Concept = () => {
   return (
-    <AccordionParagraph title='Concept' id='panel2a-header'>
+    <AccordionParagraph title='Concept' id='panel2a-header' event='main'>
       <Typography paragraph variant='h6' align='left' className='indent-3'>
         <strong>Valencia</strong> is one of the main cities of the
         Mediterranean, which has managed to combine the old with the modern, in

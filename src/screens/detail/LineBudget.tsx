@@ -14,11 +14,10 @@ type Props = {
 export const LineBudget = forwardRef(({ event }: Props, ref) => {
   return (
     <div ref={ref as any} className='budget'>
-      <div className='!no-scrollbar !overflow-x-auto !w-max !min-h-max'>
+      <div className='!no-scrollbar !overflow-x-auto !min-h-max'>
         <Table
           stickyHeader
           sx={{
-            minWidth: 900,
             boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)'
           }}
           size='small'

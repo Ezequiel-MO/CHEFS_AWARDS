@@ -87,6 +87,14 @@ const columns: GridColDef[] = [
           style =
             'bg-med_red text-med_white rounded-2xl p-3 text-center font-bold'
           break
+        case 'Decorations':
+          style =
+            'bg-med_blue text-med_white rounded-2xl p-3 text-center font-bold'
+          break
+        case 'Gifts':
+          style =
+            'bg-med_blue_light text-med_white rounded-2xl p-3 text-center font-bold'
+          break
         default:
           style =
             'bg-med_purple text-med_white rounded-2xl p-3 text-center font-bold'

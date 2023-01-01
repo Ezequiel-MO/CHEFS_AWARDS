@@ -1,6 +1,10 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { AwardsLayout, ChefLayout, PageLayout } from '../components/layouts'
-import { StrategicDetails } from '../components/organisms'
+import {
+  ADLineBudget,
+  CFLineBudget,
+  StrategicDetails
+} from '../components/organisms'
 import {
   ADVenueDetails,
   AwardsDinner,
@@ -31,7 +35,7 @@ export const router = createBrowserRouter([
       { path: 'venue_details', element: <CFVenueDetails /> },
       {
         path: 'budget',
-        element: <Budget event='cf' />
+        element: <CFLineBudget />
       },
       {
         path: 'timeline_details',
@@ -48,7 +52,7 @@ export const router = createBrowserRouter([
       { path: 'venue_details', element: <ADVenueDetails /> },
       {
         path: 'budget',
-        element: <Budget event='da' />
+        element: <ADLineBudget />
       },
       { path: 'timeline_details', element: <TimeLine type='awards_dinner' /> }
     ],

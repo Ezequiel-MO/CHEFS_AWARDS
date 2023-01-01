@@ -4,7 +4,11 @@ import { AccordionParagraph } from '../../molecules'
 
 export const Strategic = () => {
   return (
-    <AccordionParagraph title='Strategic Approach' id='panel3a-header'>
+    <AccordionParagraph
+      title='Strategic Approach'
+      id='panel3a-header'
+      event='main'
+    >
       <Typography paragraph variant='h6' align='left' className='indent-3'>
         Valencia is a city of contrasts where tradition and the avant-garde
         coexist perfectly. ​ In some areas, tradition has remained unchanged to

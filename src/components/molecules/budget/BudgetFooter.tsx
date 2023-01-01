@@ -3,7 +3,7 @@ import accounting from 'accounting'
 import {
   tableDataCF,
   tableDataDA
-} from '../../../screens/detail/cf_budget/CF_table_data'
+} from '../../../screens/detail/budget/table_data'
 
 type Props = {
   event: string
@@ -17,7 +17,7 @@ export const BudgetFooter = ({ event }: Props) => {
     <TableFooter>
       <TableRow>
         <TableCell
-          colSpan={5}
+          colSpan={4}
           className={`${bg_color} !text-right !font-bold !bg-opacity-50 !text-lg `}
         >
           TOTAL

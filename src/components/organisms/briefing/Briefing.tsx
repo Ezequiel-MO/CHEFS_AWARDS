@@ -10,6 +10,7 @@ export const Briefing = () => {
       title='Briefing'
       id='panel1a-header'
       backgroundColor='#FAFAFA'
+      event='main'
     >
       <div className='flex flex-col'>
         <p>
