@@ -105,8 +105,8 @@ export const Briefing = () => {
           </div>
           <div className='bg-[#fff] rounded-md shadow-xl p-5 border border-l-med_purple -ml-96 hover:transform hover:scale-110 hover:-rotate-1 hover:transition-all hover:duration-500'>
             <div className='mb-2'>
-              <h3 className='text-med_green text-xl font-bold'>
-                The World's Best Restaurants Awards
+              <h3 className='text-med_blue text-xl font-bold'>
+                The World's 50 Best Restaurants Awards Ceremony
               </h3>
             </div>
             <table>
