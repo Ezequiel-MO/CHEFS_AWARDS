@@ -113,8 +113,7 @@ export const Map = () => {
         <div
           className='cursor-pointer p-2 text-center'
           onClick={() => {
-            //set map to fit the bounds of the markers
-            map?.fitBounds(bounds)
+            /*   map?.fitBounds(bounds) */
             setZoom(11)
             setLocation({
               place: 'Campo Anibal',
