@@ -76,7 +76,6 @@ export const Map = () => {
   useEffect(() => {
     if (map) {
       setMap(map)
-      map?.panTo(location.coords)
     }
   }, [location, zoom, bounds])
 
