@@ -5,7 +5,7 @@ import { new_mosaic, old_mosaic } from './photos'
 export const Concept = () => {
   return (
     <AccordionParagraph title='Concept' id='panel2a-header' event='main'>
-      <Typography paragraph variant='h6' align='left' className='indent-3'>
+      <p className='indent-5'>
         <strong>Valencia</strong> is one of the main cities of the
         Mediterranean, which has managed to combine the old with the modern, in
         a perfect symbiosis, which is constantly fed by the differences that are
@@ -21,21 +21,22 @@ export const Concept = () => {
         "Paella", in addition to having a rich and exquisite gastronomy)​ ​ ​
         And this is what we want to reflect in our presentation: the "two
         Valencias" ​ ​ ​ ​
-      </Typography>
-      <Typography paragraph variant='h6' align='left' className='indent-3'>
-        The CUTT/events team has designed TWO EXPERIENCES where attendees will
-        discover first hand, the city of Valencia, its culture and above all its
-        gastronomy. ​ ​ In each of the dinners, we will tell a STORY, through
-        which, the attendees will discover the history of the city through its
-        most emblematic festival "Las Fallas" (Chef feast); and the avant-garde
-        in a journey through the City of Arts and Sciences and its inspiration
-        in nature (Gala & Adwards ceremony)​ ​{' '}
+      </p>
+      <p className='indent-5'>
+        The <strong className='italic'>CUTT/events</strong> team has designed
+        <strong>TWO EXPERIENCES</strong> where attendees will discover first
+        hand, the city of Valencia, its culture and above all its gastronomy. ​
+        ​ In each of the dinners, we will tell a STORY, through which, the
+        attendees will discover the history of the city through its most
+        emblematic festival "Las Fallas" (Chef feast); and the avant-garde in a
+        journey through the City of Arts and Sciences and its inspiration in
+        nature (Gala & Adwards ceremony)​ ​{' '}
         {/* As a thread conductor of the two
         experiences, we have chosen an element that appears both in the old part
         of the city, as in the modern: THE TRENCADIS  */}
         ​<RenderPhotos images={old_mosaic} />
         ​<RenderPhotos images={new_mosaic} />
-      </Typography>
+      </p>
     </AccordionParagraph>
   )
 }

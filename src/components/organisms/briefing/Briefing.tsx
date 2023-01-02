@@ -15,16 +15,18 @@ export const Briefing = () => {
       event='main'
     >
       <div className='flex flex-col p-5'>
-        <p>
-          The World’s 50 Best Restaurants Awards Ceremony is the most
-          prestigious event in the global restaurant industry calendar. It is a
-          celebration of the world’s best restaurants, chefs and industry
-          leaders.{' '}
-        </p>
-        <p>
+        <p className='indent-5'>
+          The{' '}
+          <strong className='italic'>
+            World’s 50 Best Restaurants Awards Ceremony
+          </strong>{' '}
+          is the most prestigious event in the global restaurant industry
+          calendar. It is a celebration of the world’s best restaurants, chefs
+          and industry leaders. <br />
           The event programme is spread across 4 to 5 days and includes, but is
-          not limited to:{' '}
-        </p>{' '}
+          not limited to:
+        </p>
+
         <ol>
           <li> Welcome to Country Dinner,</li>
           <li> #50BestTalks,</li>

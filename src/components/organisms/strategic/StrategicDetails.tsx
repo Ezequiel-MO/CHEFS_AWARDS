@@ -5,9 +5,9 @@ import ColorPalette from '../../../assets/concept/color_palette.png'
 export const StrategicDetails = () => {
   return (
     <Paper elevation={0} className='p-5 max-w-[900px]'>
-      <Typography paragraph variant='h4' align='center' className='indent-3'>
+      <h1 className='uppercase text-center text-xl font-bold mb-2'>
         The TRENCADÍS as a concept
-      </Typography>
+      </h1>
       <div className='grid grid-cols-1'>
         <Typography
           paragraph

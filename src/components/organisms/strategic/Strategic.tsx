@@ -1,15 +1,10 @@
-import { Typography } from '@mui/material'
-import { Link } from 'react-router-dom'
 import { AccordionParagraph } from '../../molecules'
+import { StrategicDetails } from './StrategicDetails'
 
 export const Strategic = () => {
   return (
-    <AccordionParagraph
-      title='Strategic Approach'
-      id='panel3a-header'
-      event='main'
-    >
-      <Typography paragraph variant='h6' align='left' className='indent-3'>
+    <AccordionParagraph title='Key Visuals' id='panel3a-header' event='main'>
+      <p className='indent-5'>
         Valencia is a city of contrasts where tradition and the avant-garde
         coexist perfectly. ​ In some areas, tradition has remained unchanged to
         this day, such as popular festivals and traditional dresses.​ In other
@@ -24,13 +19,9 @@ export const Strategic = () => {
         the avant-garde, as well as a link between the different buildings of
         the CAC, which is why we have been inspired by it to design the CONCEPT
         of the World's 50 Best Restaurants 23​
-      </Typography>
+      </p>
 
-      <Link to='/strategic_approach'>
-        <p className='hover:underline italic my-2 text-center cursor-pointer font-bold text-med_sand'>
-          Click here to see the details ...
-        </p>
-      </Link>
+      <StrategicDetails />
     </AccordionParagraph>
   )
 }
