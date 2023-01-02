@@ -7,7 +7,7 @@ import New2 from '../../../assets/concept/new_trencadis/new_2.jpg'
 import New3 from '../../../assets/concept/new_trencadis/new_3.jpg'
 import New4 from '../../../assets/concept/new_trencadis/new_4.jpeg'
 
-export const old_mosaic = [
+export const mosaic = [
   {
     src: Old1,
     alt: 'old1'
@@ -23,10 +23,7 @@ export const old_mosaic = [
   {
     src: Old4,
     alt: 'old4'
-  }
-]
-
-export const new_mosaic = [
+  },
   {
     src: New1,
     alt: 'new1'

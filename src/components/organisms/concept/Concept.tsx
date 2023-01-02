@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material'
 import { AccordionParagraph, RenderPhotos } from '../../molecules'
-import { new_mosaic, old_mosaic } from './photos'
+import { mosaic } from './photos'
 
 export const Concept = () => {
   return (
@@ -34,8 +34,7 @@ export const Concept = () => {
         {/* As a thread conductor of the two
         experiences, we have chosen an element that appears both in the old part
         of the city, as in the modern: THE TRENCADIS  */}
-        ​<RenderPhotos images={old_mosaic} />
-        ​<RenderPhotos images={new_mosaic} />
+        ​<RenderPhotos images={mosaic} />
       </p>
     </AccordionParagraph>
   )
