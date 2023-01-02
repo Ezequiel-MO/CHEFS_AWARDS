@@ -17,6 +17,7 @@ type IProps = {
 
 export const LocationMap = ({ venue }: IProps) => {
   const [map, setMap] = useState<google.maps.Map>()
+  const [zoom, setZoom] = useState<number>(14)
   const [location, setLocation] = useState<ILocation>({
     place: 'Valencia City Center',
     coords: {
@@ -40,6 +41,14 @@ export const LocationMap = ({ venue }: IProps) => {
     []
   )
 
+  const bounds = useMemo<google.maps.LatLngBounds>(() => {
+    const bounds = new google.maps.LatLngBounds()
+    bounds.extend(ValenciaCityCenterLocation)
+    bounds.extend(CACLocation)
+    bounds.extend(CampoAnibalLocation)
+    return bounds
+  }, [])
+
   const onLoad = useCallback((map: google.maps.Map) => {
     setMap(map)
   }, [])
@@ -51,6 +60,8 @@ export const LocationMap = ({ venue }: IProps) => {
         coords: CACLocation
       })
     } else if (venue === 'Campo Anibal') {
+      map?.fitBounds(bounds)
+      setZoom(9)
       setLocation({
         place: 'Campo Anibal',
         coords: CampoAnibalLocation
@@ -67,7 +78,6 @@ export const LocationMap = ({ venue }: IProps) => {
     () => ({
       mapId: '37537533e1cc90',
       center: ValenciaCityCenterLocation,
-      zoom: 12,
       controlSize: 25,
       disableDefaultUI: true,
       clickableIcons: false,
@@ -97,6 +107,7 @@ export const LocationMap = ({ venue }: IProps) => {
       <div className='map'>
         <GoogleMap
           options={options}
+          zoom={zoom}
           mapContainerClassName='map-container'
           onLoad={onLoad as any}
         >

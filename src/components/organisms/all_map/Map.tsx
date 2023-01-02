@@ -12,6 +12,7 @@ type ILocation = {
 }
 
 export const Map = () => {
+  const [zoom, setZoom] = useState<number>(14)
   const [map, setMap] = useState<google.maps.Map>()
   const [location, setLocation] = useState<ILocation>({
     place: 'Valencia City Center',
@@ -36,10 +37,17 @@ export const Map = () => {
     []
   )
 
+  const bounds = useMemo<google.maps.LatLngBounds>(() => {
+    const bounds = new google.maps.LatLngBounds()
+    bounds.extend(ValenciaCityCenterLocation)
+    bounds.extend(CACLocation)
+    bounds.extend(CampoAnibalLocation)
+    return bounds
+  }, [])
+
   const options = useMemo<MapOptions>(
     () => ({
       mapId: '37537533e1cc90',
-      zoom: 14,
       center: ValenciaCityCenterLocation,
       controlSize: 25,
       disableDefaultUI: true,
@@ -68,9 +76,9 @@ export const Map = () => {
   useEffect(() => {
     if (map) {
       setMap(map)
-      /*      map?.panTo(location.coords) */
+      map?.panTo(location.coords)
     }
-  }, [location])
+  }, [location, zoom, bounds])
 
   const onLoad = useCallback((map: google.maps.Map) => {
     return setMap(map)
@@ -81,34 +89,39 @@ export const Map = () => {
       <div className='controls bg-med_blue opacity-80'>
         <div
           className='cursor-pointer p-2 text-center'
-          onClick={() =>
+          onClick={() => {
+            setZoom(12)
             setLocation({
               place: 'Valencia City Center',
               coords: ValenciaCityCenterLocation
             })
-          }
+          }}
         >
           Valencia City Center
         </div>
         <div
           className='cursor-pointer p-2 text-center'
-          onClick={() =>
+          onClick={() => {
+            setZoom(12)
             setLocation({
               place: 'City of Arts & Sciences',
               coords: CACLocation
             })
-          }
+          }}
         >
           City of Arts & Sciences
         </div>
         <div
           className='cursor-pointer p-2 text-center'
-          onClick={() =>
+          onClick={() => {
+            //set map to fit the bounds of the markers
+            map?.fitBounds(bounds)
+            setZoom(11)
             setLocation({
               place: 'Campo Anibal',
               coords: CampoAnibalLocation
             })
-          }
+          }}
         >
           Campo Anibal
         </div>
@@ -116,6 +129,10 @@ export const Map = () => {
       <div className='map'>
         <GoogleMap
           options={options}
+          zoom={zoom}
+          onBoundsChanged={() => {
+            setZoom(map?.getZoom() as number)
+          }}
           mapContainerClassName='map-container'
           onLoad={onLoad as any}
         >
