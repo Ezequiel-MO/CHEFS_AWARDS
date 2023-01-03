@@ -12,11 +12,14 @@ interface Props {
 
 export const TimeLine: FC<Props> = ({ type }) => {
   return (
-    <Grid container sx={{ width: '92vw' }}>
+    <Grid
+      container
+      sx={{ width: '100vw', maxWidth: '1200px', marginLeft: '-80px' }}
+    >
       <Grid item xs={12} sm={3}>
         <EventTimeline type={type} />
       </Grid>
-      <Grid item xs={12} sm={8}>
+      <Grid item xs={12} sm={9}>
         {type === 'chef_feast' ? (
           <CFTimeLineDescriptions />
         ) : (
