@@ -13,17 +13,61 @@ import Slide11 from '../../../assets/chef_awards/slides/slide11.png'
 
 export const CFTimeLineDescriptions = () => {
   return (
-    <Box>
-      <img src={Slide2} alt='slide_2' id='cf_arrivals' />
-      <img src={Slide3} alt='slide_3' />
-      <img src={Slide4} alt='slide_4' id='cf_welcome_drink' />
-      <img src={Slide5} alt='slide_5' />
-      <img src={Slide6} alt='slide_6' id='cf_dinner' />
-      <img src={Slide7} alt='slide_7' />
-      <img src={Slide8} alt='slide_8' />
-      <img src={Slide9} alt='slide_9' />
-      <img src={Slide10} alt='slide_10' id='cf_party' />
-      <img src={Slide11} alt='slide_11' />
+    <Box className='cursor-pointer '>
+      <img
+        src={Slide2}
+        alt='slide_2'
+        id='cf_arrivals'
+        className='hover:scale-125 transition-transform hover:-ml-16'
+      />
+      <img
+        src={Slide3}
+        alt='slide_3'
+        className='hover:scale-125 transition-transform hover:-ml-16'
+      />
+      <img
+        src={Slide4}
+        alt='slide_4'
+        id='cf_welcome_drink'
+        className='hover:scale-125 transition-transform hover:-ml-16'
+      />
+      <img
+        src={Slide5}
+        alt='slide_5'
+        className='hover:scale-125 transition-transform hover:-ml-16'
+      />
+      <img
+        src={Slide6}
+        alt='slide_6'
+        id='cf_dinner'
+        className='hover:scale-125 transition-transform hover:-ml-16'
+      />
+      <img
+        src={Slide7}
+        alt='slide_7'
+        className='hover:scale-125 transition-transform hover:-ml-16'
+      />
+      <img
+        src={Slide8}
+        alt='slide_8'
+        className='hover:scale-125 transition-transform hover:-ml-16'
+      />
+      <img
+        src={Slide9}
+        alt='slide_9'
+        className='hover:scale-125 transition-transform hover:-ml-16'
+      />
+      <img
+        src={Slide10}
+        alt='slide_10'
+        id='cf_party'
+        className='hover:scale-125 transition-transform hover:-ml-16'
+      />
+      <img
+        src={Slide11}
+        alt='slide_11'
+        className='hover:scale-125 transition-transform hover:-ml-16'
+      />
     </Box>
   )
 }

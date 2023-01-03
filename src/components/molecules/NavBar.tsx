@@ -2,11 +2,17 @@ import { NavLink, useNavigate } from 'react-router-dom'
 import { Box, Link as MuiLink, Button } from '@mui/material'
 import { Icon } from '@iconify/react'
 import Logo from '../../assets/logo.jpg'
+import { useScrollDirection } from '../../hooks/useScrollDirection'
 
 export const Navbar = () => {
   const navigate = useNavigate()
+  const scrollDirection = useScrollDirection()
   return (
-    <nav className='flex flex-row items-center bg-transparent sticky top-0 z-50'>
+    <nav
+      className={`flex flex-row items-center bg-transparent sticky ${
+        scrollDirection === 'down' ? '-top-24' : 'top-0'
+      } z-50`}
+    >
       <MuiLink display='flex' alignItems='center' href='/'>
         <img src={Logo} alt='logo' className='max-w-[100px] object-contain' />
       </MuiLink>
