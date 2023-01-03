@@ -37,7 +37,7 @@ export const TimeLineItem: FC<Props> = ({ title, icon, time, type }) => {
         </TimelineDot>
         <TimelineConnector />
       </TimelineSeparator>
-      <TimelineContent sx={{ py: '20px', px: 2 }}>
+      <TimelineContent sx={{ py: '20px' }}>
         <Typography variant='body1' component='span'>
           {title}
         </Typography>
