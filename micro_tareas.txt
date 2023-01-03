@@ -1,0 +1,23 @@
+*Mapa - hacer un zoom out 2 menos en campo anibal - que se vea Valencia
+*Briefing Cards - Título : The World's 50 Best Restaurants Awards Ceremony - y ponerlo en azul 
+*Briefing - añadir sangrado
+*Concept : harmonizar el texto con el del briefing
+*Concept : mostrar las fotos en un slider
+*Strategic Approach : Cambiar el título por key visuals
+*Strategic Approach : poner todo el contenido dentro del acordeon
+Meet The Team : una tercera tarjeta, y al abrir la tarjeta , aparece un modal con nuestro logo y la presentación del partnership entre Cutt events y See network
+A Walk through the Night: hacer el timeline mas estrecho, ocupando menos espacio. Hacer las diapositivas clickables y que abran un modal.
+A walk through the Night : En el Acordeon, poner el listado del timing de la primera diapositiva - con el mismo formato que el listado del briefing, y clickable en cualquier parte de la lista, reforzar con un botón o thumbnail de la venue que lleve al timeline
+A walk through the night: quitar los titulos iniciales ejm arrivals - 6pm to 8pm ....
+Budget - sustituir el link por algún de icono - o convertirlo en un botón ....
+poner el budget abajo.
+Sources of inspiration : al hacer hover, efecto de zoom sobre la foto , sin salirse del marco.
+Hemisferic - The Venue : hacer un botón que ponga view the 3D Model, y que lleve al link que hay dentro de la diapo
+The Venue : galeria de fotos
+Otras venues estudiadas
+
+
+
+
+
+

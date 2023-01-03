@@ -1,5 +1,5 @@
 import { Grid } from '@mui/material'
-import { AccordionParagraph, TeamMemberCard } from '../../molecules'
+import { AccordionParagraph, CUTTCard, TeamMemberCard } from '../../molecules'
 import { teamMembers } from './data'
 
 export const MeetTheTeam = () => {
@@ -11,6 +11,9 @@ export const MeetTheTeam = () => {
             <TeamMemberCard {...member} />
           </Grid>
         ))}
+        <Grid item xs={12} sm={4}>
+          <CUTTCard />
+        </Grid>
       </Grid>
       <hr className='mt-4 border-none' />
       <Grid container spacing={2}>
