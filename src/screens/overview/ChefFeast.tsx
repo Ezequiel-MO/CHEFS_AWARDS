@@ -24,11 +24,17 @@ export const ChefFeast = () => {
           title='A Walk through the Night'
           id='panel3a-header'
         >
-          <Link
-            to='/chef_feast/timeline_details'
-            className='hover:underline cursor-pointer'
-          >
-            Peek into the night
+          <Link to='/chef_feast/timeline_details' className='cursor-pointer'>
+            <p>Click anywhere on the list for a detailed schedule ...</p>
+            <ol>
+              <li>6pm - 7pm : Arrival By Bus</li>
+              <li>6pm - 7pm : Welcome Drinks</li>
+              <li>7pm : Mascleta</li>
+              <li>7pm - 9pm : Standing Buffet w/Entertainment</li>
+              <li>9pm-9.15pm: Fireworks and burn of the Falla</li>
+              <li>9.15pm - 11pm : DJ Party</li>
+              <li>11pm : Departure by Bus Back to Valencia</li>
+            </ol>
           </Link>
         </AccordionParagraph>
         <AccordionParagraph title='Budget' id='panel4a-header'>
