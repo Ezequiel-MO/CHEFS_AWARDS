@@ -1,8 +1,8 @@
 import Sara from '../../../assets/meet_team/profile_pics/sarah.jpg'
 import Montse from '../../../assets/meet_team/profile_pics/user-2.jpg'
 import Minerva from '../../../assets/meet_team/profile_pics/user-5.jpg'
-import Cecilia from '../../../assets/meet_team/profile_pics/user-11.jpg'
-import Federica from '../../../assets/meet_team/profile_pics/user-20.jpg'
+import Celia from '../../../assets/meet_team/profile_pics/Celia.jpg'
+import Federica from '../../../assets/meet_team/profile_pics/Federica.jpg'
 import Maite from '../../../assets/meet_team/profile_pics/user-14.jpg'
 import Andrea from '../../../assets/meet_team/profile_pics/andrea.jpg'
 import Ezequiel from '../../../assets/meet_team/profile_pics/user-13.jpg'
@@ -33,7 +33,8 @@ export const teamMembers = [
     name: 'Montse Miranda',
     role: 'Event Manager',
     labels: [labels[0], labels[1]],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    description:
+      'Goals-driven team player with an inner passion for sales and project management within the meeting industry. Montse is a natural-born planner ready to execute, always going the extra mile to create added value for our clients. With more than 20 years of experience in destination management, working on meetings, conferences, and incentive programs. She loves the operational side of events. ',
     email: 'montse@cutt.events',
     more: 'https://www.linkedin.com/in/montse-fernandez-fernandez-5b1b3b1b3/'
   },
@@ -42,7 +43,8 @@ export const teamMembers = [
     name: 'Minerva Martinez',
     role: 'Project Manager',
     labels: [labels[0], labels[8]],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    description:
+      'Minerva is our head of operations. She holds a University degree in Architecture, and she really builds projects! Ridiculously organized, Minerva aces project management. She not only leads most of our larger programs, but she is also really good at editing, designing, and any creative task required in the MICE industry. ',
     email: 'minerva@gmail.com',
     more: 'https://www.linkedin.com/in/minerva-fernandez-fernandez-5b1b3b1b3/'
   },
@@ -65,10 +67,11 @@ export const teamMembers = [
     name: 'Sarah Dambruoso',
     role: 'Project Manager',
     labels: [labels[7], labels[8]],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit'
+    description:
+      'Mrs. Trouble-shooter -Sarah is a spicy mix of German efficiency and Latin soul based on Spanish territory. With professionalism and dedication, she will advise you to turn your projects into unforgettable success!'
   },
   {
-    avatar: Cecilia,
+    avatar: Celia,
     name: 'Celia Jimenez',
     role: 'Project Manager',
     labels: [labels[4], labels[6]],
@@ -79,7 +82,8 @@ export const teamMembers = [
     name: 'Federica Gaggioli',
     role: 'Key Account Manager',
     labels: [labels[9], labels[10]],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit'
+    description:
+      'A 360º experience of all the roles played in an event construction. An explosive cocktail of creativity, empathy, meticulousness '
   },
 
   {
@@ -87,6 +91,7 @@ export const teamMembers = [
     name: 'Andrea Longhini',
     role: 'Chef',
     labels: [labels[11]],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit'
+    description:
+      'Enthusiastic about life, graduated in philosophy and people lover. Andrea is the right person who listens to you, finds the right solution, and finds the bright side of everything.'
   }
 ]
