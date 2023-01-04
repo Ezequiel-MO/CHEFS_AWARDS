@@ -10,7 +10,7 @@ export const CFDinnerConcept = () => {
         <strong>For this dinner</strong> we have been inspired by the the
         traditions and the culture of the region.
       </Typography>
-      <PhotosLayout images={traditions} />
+      <PhotosLayout images={traditions} event='CF' />
     </AccordionParagraph>
   )
 }
