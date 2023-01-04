@@ -22,6 +22,9 @@ export const AwardsDinner = () => {
           event='awards_dinner'
         >
           <Link to='/awards_dinner/timeline_details' className='cursor-pointer'>
+            <p className='text-lg text-center font-bold italic'>
+              Click anywhere on the list for a detailed schedule ...
+            </p>
             <ol>
               <li>6pm : Arrival By Bus</li>
               <li>6pm - 8pm : Welcome and Red Carpet</li>

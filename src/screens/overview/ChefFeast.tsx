@@ -25,7 +25,9 @@ export const ChefFeast = () => {
           id='panel3a-header'
         >
           <Link to='/chef_feast/timeline_details' className='cursor-pointer'>
-            <p>Click anywhere on the list for a detailed schedule ...</p>
+            <p className='text-lg text-center font-bold italic'>
+              Click anywhere on the list for a detailed schedule ...
+            </p>
             <ol>
               <li>6pm - 7pm : Arrival By Bus</li>
               <li>6pm - 7pm : Welcome Drinks</li>
