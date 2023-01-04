@@ -21,11 +21,13 @@ export const AwardsDinner = () => {
           id='panel3a-header'
           event='awards_dinner'
         >
-          <Link
-            to='/awards_dinner/timeline_details'
-            className='hover:underline cursor-pointer'
-          >
-            Peek into the night
+          <Link to='/awards_dinner/timeline_details' className='cursor-pointer'>
+            <ol>
+              <li>6pm : Arrival By Bus</li>
+              <li>6pm - 8pm : Welcome and Red Carpet</li>
+              <li>6pm - 8pm : Gala Dinner </li>
+              <li>8pm - 8.45pm : Walk to Palau de les Arts</li>
+            </ol>
           </Link>
         </AccordionParagraph>
         <AccordionParagraph

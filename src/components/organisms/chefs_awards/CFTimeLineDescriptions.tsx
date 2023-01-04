@@ -13,13 +13,8 @@ import Slide11 from '../../../assets/chef_awards/slides/slide11.png'
 
 export const CFTimeLineDescriptions = () => {
   return (
-    <Box className='cursor-pointer '>
-      <img
-        src={Slide2}
-        alt='slide_2'
-        id='cf_arrivals'
-        className='hover:scale-125 transition-transform hover:-ml-16'
-      />
+    <Box>
+      <img src={Slide2} alt='slide_2' id='cf_arrivals' />
       <img
         src={Slide3}
         alt='slide_3'
