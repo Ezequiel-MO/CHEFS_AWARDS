@@ -11,7 +11,7 @@
 *A walk through the night: quitar los titulos iniciales ejm arrivals - 6pm to 8pm ....
 Budget - sustituir el link por algún de icono - o convertirlo en un botón ....
 poner el budget abajo.
-Sources of inspiration : al hacer hover, efecto de zoom sobre la foto , sin salirse del marco.
+* Sources of inspiration : al hacer hover, efecto de zoom sobre la foto , sin salirse del marco.
 Hemisferic - The Venue : hacer un botón que ponga view the 3D Model, y que lleve al link que hay dentro de la diapo
 The Venue : galeria de fotos
 Otras venues estudiadas

@@ -13,14 +13,6 @@ export const Budget = ({ event }: Props) => {
   const componentRef = useRef()
   return (
     <div>
-      <div className='text-center my-2'>
-        <Link
-          to={`/${slug}/budget`}
-          className='hover:underline italic my-2 cursor-pointer font-bold text-med_sand'
-        >
-          Please click here to go to a line by line breakdown of the budget
-        </Link>
-      </div>
       <ReactToPrint
         trigger={() => (
           <button className='flex flex-row items-center mb-2 py-4 hover:underline italic'>
@@ -37,6 +29,17 @@ export const Budget = ({ event }: Props) => {
         content={() => componentRef.current as any}
       />
       <LineBudget event={event} ref={componentRef} />
+      <div className='text-center my-10'>
+        <Link
+          to={`/${slug}/budget`}
+          className={`cursor-pointer hover:underline italic font-bold text-lg ${
+            event === 'da' ? 'text-med_blue' : 'text-med_sand'
+          } flex items-center justify-center`}
+        >
+          <Icon icon='tabler:pig-money' width={100} />
+          <span className=''>Click here to see the budget line by line</span>
+        </Link>
+      </div>
     </div>
   )
 }
