@@ -1,7 +1,7 @@
 import { Typography, Paper } from '@mui/material'
 import { Link } from 'react-router-dom'
 import { AccordionParagraph } from '../../components/molecules/Accordion'
-import { ADBudget, ADDinnerConcept, TheVenue } from '../../components/organisms'
+import { ADDinnerConcept, TheVenue } from '../../components/organisms'
 import { Budget } from '../detail/Budget'
 
 export const AwardsDinner = () => {
