@@ -103,7 +103,7 @@ export const LocationMap = ({ venue }: IProps) => {
   }
 
   return (
-    <div className='flex w-full justify-center h-[400px] relative my-5'>
+    <div className='flex justify-center h-[400px] relative my-5'>
       <div className='map'>
         <GoogleMap
           options={options}
@@ -118,7 +118,7 @@ export const LocationMap = ({ venue }: IProps) => {
               pixelOffset: new google.maps.Size(0, -70)
             }}
           >
-            <div className='bg-med_white border-2 border-med_green rounded-lg p-10'>
+            <div className='bg-med_white border-2 border-med_green rounded-lg p-5'>
               <Typography className='cursor-pointer' variant='h6'>
                 {location.place}
               </Typography>

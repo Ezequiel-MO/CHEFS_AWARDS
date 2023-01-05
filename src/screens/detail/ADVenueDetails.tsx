@@ -8,9 +8,11 @@ export const ADVenueDetails = () => {
       <Typography variant='h1' className='bg-med_blue text-med_white p-2'>
         City Of Arts And Sciences . Play the video for the visuals
       </Typography>
-      <Box className='w-full'>
+      <Box className='cursor-pointer'>
         <video src={CACVideo} autoPlay={true} controls={true} />
-        <LocationWrapper venue='CAC' />
+        <div className='border border-med_brown '>
+          <LocationWrapper venue='CAC' />
+        </div>
       </Box>
     </Paper>
   )
