@@ -103,7 +103,7 @@ export const LocationMap = ({ venue }: IProps) => {
   }
 
   return (
-    <div className='flex w-full justify-center h-[400px] relative'>
+    <div className='flex w-full justify-center h-[400px] relative my-5'>
       <div className='map'>
         <GoogleMap
           options={options}
