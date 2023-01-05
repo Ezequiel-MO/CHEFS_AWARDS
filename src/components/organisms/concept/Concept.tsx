@@ -1,4 +1,3 @@
-import { Typography } from '@mui/material'
 import { AccordionParagraph, RenderPhotos } from '../../molecules'
 import { mosaic } from './photos'
 
