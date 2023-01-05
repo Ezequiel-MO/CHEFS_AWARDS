@@ -6,7 +6,7 @@ interface TheVenueProps {
   event: string
 }
 
-const cf_descriptions = [
+const ad_descriptions = [
   {
     title: 'Hemisferic',
     description:
@@ -25,7 +25,7 @@ const cf_descriptions = [
 ]
 
 export const TheVenue = ({ event }: TheVenueProps) => {
-  const descriptions = event === 'chef_feast' ? cf_descriptions : []
+  const descriptions = event === 'awards_dinner' ? ad_descriptions : []
   return (
     <AccordionParagraph title='The Venue' id='panel2a-header' event={event}>
       <Link
