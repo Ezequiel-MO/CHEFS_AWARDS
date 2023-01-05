@@ -1,5 +1,5 @@
 import { Box } from '@mui/material'
-
+import Slide1 from '../../../assets/chef_awards/slides/slide1.png'
 import Slide2 from '../../../assets/chef_awards/slides/slide2.png'
 import Slide3 from '../../../assets/chef_awards/slides/slide3.png'
 import Slide4 from '../../../assets/chef_awards/slides/slide4.png'
@@ -9,12 +9,20 @@ import Slide7 from '../../../assets/chef_awards/slides/slide7.png'
 import Slide8 from '../../../assets/chef_awards/slides/slide8.png'
 import Slide9 from '../../../assets/chef_awards/slides/slide9.png'
 import Slide10 from '../../../assets/chef_awards/slides/slide10.png'
-import Slide11 from '../../../assets/chef_awards/slides/slide11.png'
 
 export const CFTimeLineDescriptions = () => {
   return (
     <Box>
-      <img src={Slide2} alt='slide_2' id='cf_arrivals' />
+      <img
+        src={Slide1}
+        alt='slide_1'
+        className='hover:scale-125 transition-transform hover:-ml-16'
+      />
+      <img
+        src={Slide2}
+        alt='slide_2'
+        className='hover:scale-125 transition-transform hover:-ml-16'
+      />
       <img
         src={Slide3}
         alt='slide_3'
@@ -56,11 +64,6 @@ export const CFTimeLineDescriptions = () => {
         src={Slide10}
         alt='slide_10'
         id='cf_party'
-        className='hover:scale-125 transition-transform hover:-ml-16'
-      />
-      <img
-        src={Slide11}
-        alt='slide_11'
         className='hover:scale-125 transition-transform hover:-ml-16'
       />
     </Box>

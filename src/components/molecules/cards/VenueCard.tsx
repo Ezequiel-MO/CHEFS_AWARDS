@@ -62,7 +62,7 @@ const Xamandreu_text = () => {
           fireworks display (we would have to change the concept a bit).
         </li>
         <li className='bg-med_green text-med_white p-2 rounded-lg my-2 text-sm hover:opacity-90'>
-          ... The venue is not as integrated in the Valencian economy as
+          ... The venue is not as integrated in the Valencian economy as{' '}
           <strong>Campo Anibal</strong>
         </li>
       </ul>

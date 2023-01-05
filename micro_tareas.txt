@@ -13,8 +13,9 @@
 *poner el budget abajo.
 * Sources of inspiration : al hacer hover, efecto de zoom sobre la foto , sin salirse del marco.
 *Hemisferic - The Venue : hacer un botón que ponga view the 3D Model, y que lleve al link que hay dentro de la diapo
+*Otras venues estudiadas
 The Venue : galeria de fotos
-Otras venues estudiadas
+
 
 
 
