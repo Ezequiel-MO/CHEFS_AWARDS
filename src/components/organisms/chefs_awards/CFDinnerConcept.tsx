@@ -1,4 +1,3 @@
-import { Typography } from '@mui/material'
 import { PhotosLayout } from '../../layouts'
 import { AccordionParagraph } from '../../molecules'
 import { traditions } from './photos'

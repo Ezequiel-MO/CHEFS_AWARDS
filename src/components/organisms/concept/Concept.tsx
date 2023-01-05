@@ -29,7 +29,7 @@ export const Concept = () => {
         attendees will discover the history of the city through its most
         emblematic festival "Las Fallas" (Chef feast); and the avant-garde in a
         journey through the City of Arts and Sciences and its inspiration in
-        nature (Gala & Adwards ceremony)​ ​{' '}
+        nature (<strong className='italic'>Gala & Adwards ceremony</strong>)​ ​{' '}
         {/* As a thread conductor of the two
         experiences, we have chosen an element that appears both in the old part
         of the city, as in the modern: THE TRENCADIS  */}
