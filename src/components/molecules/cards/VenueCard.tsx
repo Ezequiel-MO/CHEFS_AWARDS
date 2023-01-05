@@ -123,6 +123,80 @@ const Vallesa_text = () => {
   )
 }
 
+const CalleMayor_text = () => {
+  return (
+    <div className='flex flex-col justify-center items-center'>
+      <p className='text-2xl font-bold my-5'>Calle Mayor</p>
+      <p className='text-sm indent-5'>
+        Located in the <strong>Principe Felipe Museum </strong>, this area was a
+        preferred one for the client. It offers spectacular views of part of the
+        city of Valencia. It also houses the two most emblematic elements of the
+        Museum: Focault's pendulum and a representation of a DNA molecule.
+        However, we although this area would be feasible, we would like to
+        discourage it because{' '}
+      </p>
+      <ul className='p-2'>
+        <li className='bg-med_green text-med_white p-2 rounded-lg my-2 text-sm hover:opacity-90'>
+          ... at 6:00pm in Valencia, expect high temperatures and no shade. The
+          large glass area will be overheated and uncomfortable since it
+          receives direct sunlight all day.
+        </li>
+        <li className='bg-med_green text-med_white p-2 rounded-lg my-2 text-sm hover:opacity-90'>
+          ... the museum is open to the public until 8:00pm. The 'Calle Mayor'
+          is connected to the floors where the interactive experiments of the
+          museum are located, so the influx of visitors and subsequent noise can
+          interfere negatively in the evening.
+        </li>
+      </ul>
+    </div>
+  )
+}
+
+const Arquerias_text = () => {
+  return (
+    <div className='flex flex-col justify-center items-center'>
+      <p className='text-2xl font-bold my-5'>Arquerias</p>
+      <p className='text-sm indent-5'>
+        This space, located in the lower part of the{' '}
+        <strong>Principe Felipe Museum </strong> , consists of 12 sections of
+        300 square metres each we have not chosen this option for the following
+        reasons:{' '}
+      </p>
+      <ul className='p-2'>
+        <li className='bg-med_green text-med_white p-2 rounded-lg my-2 text-sm hover:opacity-90'>
+          ... for our purposes, this area has very low ceilings
+        </li>
+        <li className='bg-med_green text-med_white p-2 rounded-lg my-2 text-sm hover:opacity-90'>
+          ... the management of 'CAC' has already informed us that this area is
+          contracted for some summer concerts
+        </li>
+      </ul>
+    </div>
+  )
+}
+
+const Umbracle_text = () => {
+  return (
+    <div className='flex flex-col justify-center items-center'>
+      <p className='text-2xl font-bold my-5'>Umbracle for Gala Dinner</p>
+      <p className='text-sm indent-5'>
+        The <strong>Umbracle</strong> would be a great venue. as it is a 4000
+        square metres venue that normally functions as a nightclub, so the
+        lighting, sound, and most of the infrastructure for the catering, as
+        well as the access control, would already be covered. This is the reason
+        why we have chosen this venue for the After Party, rather than the Gala
+        Dinner
+      </p>
+      <ul className='p-2'>
+        <li className='bg-med_green text-med_white p-2 rounded-lg my-2 text-sm hover:opacity-90'>
+          ... the main weakness would be the back up option, -{' '}
+          <strong>Mya</strong>, Mya is below the <strong> Umbracle</strong>
+        </li>
+      </ul>
+    </div>
+  )
+}
+
 export const VenueCard = ({ image, index }: Props) => {
   return (
     <Card
@@ -134,7 +208,7 @@ export const VenueCard = ({ image, index }: Props) => {
         <img
           src={image.src}
           alt={image.alt}
-          className='object-cover hover:scale-105 transition-transform'
+          className='object-fit hover:scale-105 transition-transform'
         />
       </CardMedia>
       <CardContent>
@@ -146,6 +220,12 @@ export const VenueCard = ({ image, index }: Props) => {
           ? Cartuja_text()
           : image.alt === 'vallesa'
           ? Vallesa_text()
+          : image.alt === 'calle_mayor'
+          ? CalleMayor_text()
+          : image.alt === 'arquerias'
+          ? Arquerias_text()
+          : image.alt === 'umbracle'
+          ? Umbracle_text()
           : null}
       </CardContent>
     </Card>

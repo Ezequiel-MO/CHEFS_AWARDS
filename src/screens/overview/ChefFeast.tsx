@@ -39,10 +39,10 @@ export const ChefFeast = () => {
             </ol>
           </Link>
         </AccordionParagraph>
+        <CFOtherVenues />
         <AccordionParagraph title='Budget' id='panel4a-header'>
           <Budget event='cf' />
         </AccordionParagraph>
-        <CFOtherVenues />
       </div>
     </Paper>
   )

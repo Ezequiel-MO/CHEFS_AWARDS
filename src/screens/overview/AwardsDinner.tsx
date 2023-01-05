@@ -1,7 +1,11 @@
 import { Typography, Paper } from '@mui/material'
 import { Link } from 'react-router-dom'
 import { AccordionParagraph } from '../../components/molecules/Accordion'
-import { ADDinnerConcept, TheVenue } from '../../components/organisms'
+import {
+  ADDinnerConcept,
+  ADOtherVenues,
+  TheVenue
+} from '../../components/organisms'
 import { Budget } from '../detail/Budget'
 
 export const AwardsDinner = () => {
@@ -14,6 +18,7 @@ export const AwardsDinner = () => {
         Overview
       </Typography>
       <div>
+        <ADOtherVenues />
         <ADDinnerConcept />
         <TheVenue event='awards_dinner' />
         <AccordionParagraph
