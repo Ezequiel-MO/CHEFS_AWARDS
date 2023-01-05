@@ -1,4 +1,5 @@
 import { Typography, Paper } from '@mui/material'
+
 import {
   Briefing,
   Concept,
@@ -8,7 +9,7 @@ import {
 
 export const MainSection = () => {
   return (
-    <Paper elevation={0} className='p-2 max-w-[900px]'>
+    <Paper elevation={0} className='p-2 max-w-[900px] '>
       <Typography variant='h1' className='text-black'>
         The World's 50 Best Restaurants 2023
       </Typography>
