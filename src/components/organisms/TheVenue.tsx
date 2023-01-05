@@ -28,17 +28,19 @@ export const TheVenue = ({ event }: TheVenueProps) => {
   const descriptions = event === 'awards_dinner' ? ad_descriptions : []
   return (
     <AccordionParagraph title='The Venue' id='panel2a-header' event={event}>
-      <Link
-        to={`/${event}/venue_details`}
-        className='hover:underline cursor-pointer'
-      >
+      <Link to={`/${event}/venue_details`} className='cursor-pointer'>
         <p className='text-lg text-center font-bold italic'>
           Click anywhere on the list for more details ...
         </p>
         <ol className='px-5'>
           {descriptions.map((description, index) => (
             <>
-              <li key={index} className='font-bold'>
+              <li
+                key={index}
+                className={`${
+                  event === 'awards_dinner' ? 'bg-med_blue' : 'bg-med_green'
+                } text-med_white hover:bg-med_purple`}
+              >
                 {description.title}
               </li>
               <p className='indent-5'>{description.description}</p>
