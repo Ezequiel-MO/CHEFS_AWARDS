@@ -54,14 +54,15 @@ export const teamMembers = [
     role: 'Creator Strategic Content / Technologist',
     labels: [labels[2], labels[3]],
     description:
-      'A Founder of CUTT/events back in 2008, Oliver is a passionate technologist and has led the development of the company’s technologic orientation. Oliver is a visionary and a strategic thinker, with a strong focus on innovation and technology. '
+      'A Founder of CUTT/events back in 2008, Over the past 5 years, Oliver has embraced a fully digital mindset, and has led the Company to embrace it as well. Oliver is a visionary and a strategic thinker, with a strong focus on innovation and technology. '
   },
   {
     avatar: Maite,
     name: 'Maite Audet',
     role: 'Project Manager / Setups & CAC Coordinator',
     labels: [labels[4], labels[5]],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit'
+    description:
+      'Born and bred in Barcelona, Maite graduated from the local university in 1991 with a degree and masters in Tourism to add to her qualification as an official guide. Apart from her native Spanish and Catalan, Maite speaks English and French. She joined a DMC in Barcelona - in 1998 and, after a few years, she progressed to become the office director in the Barcelona office. In October 2014, Maite started Lecturing Global tourism and Event Management at CETT_UB (University of Barcelona) and also freelancing for MICE groups.'
   },
   {
     avatar: Sara,

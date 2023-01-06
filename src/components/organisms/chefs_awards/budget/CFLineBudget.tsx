@@ -16,19 +16,19 @@ const rows: GridRowsProp = [
     id: 2,
     col1: 'Transportation',
     col2: '50 Seater Buses, 6hours at disposal, from 6pm-11pm',
-    col3: 6,
-    col4: '€0.00',
-    col5: '€0.00',
-    col6: '€0.00'
+    col3: 5,
+    col4: '€440.00',
+    col5: '€2200.00',
+    col6: '€2420.00'
   },
   {
     id: 3,
     col1: 'Transportation',
-    col2: 'Eng. speaking hostess, 6hours col2',
-    col3: 6,
+    col2: 'Eng. speaking hostess, 6hours',
+    col3: 5,
     col4: '€196.00',
-    col5: '€1,176.00',
-    col6: '€1,422.96'
+    col5: '€980.00',
+    col6: '€1,185.80'
   },
   {
     id: 4,
@@ -41,21 +41,21 @@ const rows: GridRowsProp = [
   },
   {
     id: 5,
-    col1: 'Entertainment',
+    col1: 'Activity',
     col2: 'Photo Call with Valencian Ladies',
     col3: 1,
-    col4: '€0.00',
-    col5: '€0.00',
-    col6: '€0.00'
+    col4: '€775.50',
+    col5: '€775.50',
+    col6: '€938.36'
   },
   {
     id: 6,
     col1: 'Gifts',
-    col2: 'Traditional Valencian scarf for each guest',
-    col3: 250,
+    col2: 'Optional - Traditional Valencian scarf for each guest',
+    col3: 0,
     col4: '€2.23',
-    col5: '€557.5',
-    col6: '€674.58'
+    col5: '€0.00',
+    col6: '€0.00'
   },
   {
     id: 7,
@@ -69,23 +69,32 @@ const rows: GridRowsProp = [
   {
     id: 8,
     col1: 'Gifts',
-    col2: 'Optional small Paniculata bouquet',
-    col3: '€0.00',
-    col4: '€8.00',
-    col5: '€0.00',
-    col6: '€0.00'
+    col2: 'Personalized with 50 Restaurant logo - Valencian Black t-shirt and scarf',
+    col3: 250,
+    col4: '€28',
+    col5: '€7000.00',
+    col6: '€8470.00'
   },
   {
     id: 9,
-    col1: 'Decorations',
-    col2: 'Red carpet main entrance - Cocktail area',
-    col3: 1,
-    col4: '€0.00',
-    col5: '€0.00',
-    col6: '€0.00'
+    col1: 'Gifts',
+    col2: 'Optional small Paniculata bouquet',
+    col3: 250,
+    col4: '€8.00',
+    col5: '€2000.00',
+    col6: '€2420.00'
   },
   {
     id: 10,
+    col1: 'Decorations',
+    col2: 'Red carpet main entrance - Cocktail area',
+    col3: 1,
+    col4: '€1250.00',
+    col5: '€1250.00',
+    col6: '€1512.50'
+  },
+  {
+    id: 11,
     col1: 'Food & Beverage',
     col2: 'Welcome drink - 1 hour service w / snacks, from',
     col3: 250,
@@ -94,7 +103,7 @@ const rows: GridRowsProp = [
     col6: '3,162.50'
   },
   {
-    id: 11,
+    id: 12,
     col1: 'Entertainment',
     col2: 'Mascletà - Valencian Fireworks, from',
     col3: 1,
@@ -103,7 +112,7 @@ const rows: GridRowsProp = [
     col6: '€3,025.00'
   },
   {
-    id: 12,
+    id: 13,
     col1: 'Food & Beverage',
     col2: 'Standing Buffet, 20 canapes + 1 individual dish w/ drinks 7pm-9pm, from',
     col3: 250,
@@ -112,7 +121,7 @@ const rows: GridRowsProp = [
     col6: '€1,3062.50'
   },
   {
-    id: 13,
+    id: 14,
     col1: 'Food & Beverage',
     col2: 'Vieiras and Razor clams Station',
     col3: 250,
@@ -121,7 +130,7 @@ const rows: GridRowsProp = [
     col6: '€1,031.25'
   },
   {
-    id: 14,
+    id: 15,
     col1: 'Food & Beverage',
     col2: 'Premium cheese Station',
     col3: 250,
@@ -130,7 +139,7 @@ const rows: GridRowsProp = [
     col6: '€1,306.25'
   },
   {
-    id: 15,
+    id: 16,
     col1: 'Food & Beverage',
     col2: 'Huevos rotos - scrambled eggs Station',
     col3: 250,
@@ -139,7 +148,7 @@ const rows: GridRowsProp = [
     col6: 756.25
   },
   {
-    id: 16,
+    id: 17,
     col1: 'Food & Beverage',
     col2: 'Iberian Ham Carving Station - 2 Hams & 1 Ham Slicer',
     col3: 1,
@@ -148,7 +157,7 @@ const rows: GridRowsProp = [
     col6: 1034
   },
   {
-    id: 17,
+    id: 18,
     col1: 'Food & Beverage',
     col2: 'Chips and Croquettes Station',
     col3: 250,
@@ -157,7 +166,7 @@ const rows: GridRowsProp = [
     col6: 756.25
   },
   {
-    id: 18,
+    id: 19,
     col1: 'Food & Beverage',
     col2: 'Oysters Guillerdeau Station',
     col3: 250,
@@ -166,7 +175,7 @@ const rows: GridRowsProp = [
     col6: 1581.25
   },
   {
-    id: 19,
+    id: 20,
     col1: 'Food & Beverage',
     col2: 'Paella Show Cooking Station',
     col3: 1,
@@ -175,43 +184,43 @@ const rows: GridRowsProp = [
     col6: 357.5
   },
   {
-    id: 20,
+    id: 21,
     col1: 'Entertainment',
     col2: 'Pasacalles - Valencian Folkloric Parade with Band',
     col3: 1,
-    col4: 325,
-    col5: 325,
-    col6: 357.5
-  },
-  {
-    id: 21,
-    col1: 'Entertainment',
-    col2: 'Moors Parade',
-    col3: 1,
-    col4: '€0.00',
-    col5: '€0.00',
-    col6: '€0.00'
+    col4: '€3000.00',
+    col5: '€3000.00',
+    col6: '€3630.00'
   },
   {
     id: 22,
     col1: 'Entertainment',
-    col2: 'Moors and Christians Parade with Music Band',
+    col2: 'Moors Parade',
     col3: 1,
-    col4: '€0.00',
-    col5: '€0.00',
-    col6: '€0.00'
+    col4: '€1800.00',
+    col5: '€1800.00',
+    col6: '€2178.00'
   },
   {
     id: 23,
     col1: 'Entertainment',
-    col2: 'Background Music',
+    col2: 'Moors and Christians Parade with Music Band',
     col3: 1,
-    col4: '€0.00',
-    col5: '€0.00',
+    col4: '€3500.00',
+    col5: '€3500.00',
     col6: '€0.00'
   },
   {
     id: 24,
+    col1: 'Entertainment',
+    col2: 'Guitarist Background music during the standing dinner to be placed in the pool area next to dinner standing area',
+    col3: 1,
+    col4: '€750.00',
+    col5: '€750.00',
+    col6: '€907.50'
+  },
+  {
+    id: 25,
     col1: 'Entertainment',
     col2: 'Fireworks',
     col3: 1,
@@ -220,16 +229,16 @@ const rows: GridRowsProp = [
     col6: '€4,235.00'
   },
   {
-    id: 25,
+    id: 26,
     col1: 'Entertainment',
     col2: 'Falla Paper Mache Monument from',
     col3: 1,
-    col4: '€1,650.00',
-    col5: '€1,650.00',
-    col6: '€1,996.50'
+    col4: '€2,500.00',
+    col5: '€2,500.00',
+    col6: '€3,025.00'
   },
   {
-    id: 26,
+    id: 27,
     col1: 'Food & Beverage',
     col2: 'Open Bar - 2 hours service, from',
     col3: 250,
@@ -238,61 +247,35 @@ const rows: GridRowsProp = [
     col6: '€3,300.00'
   },
   {
-    id: 27,
-    col1: 'Food & Beverage',
-    col2: '(Optional - Cocktail Bar)',
-    col3: 0,
-    col4: '€3.00',
-    col5: '€0.00',
-    col6: '€0.00'
-  },
-  {
     id: 28,
-    col1: 'Entertainment',
-    col2: 'DJ - 2 hours service, from',
-    col3: 1,
-    col4: '€450.00',
-    col5: '€450.00',
-    col6: '€544.50'
+    col1: 'Food & Beverage',
+    col2: 'Cocktail Bar station, from',
+    col3: 250,
+    col4: '€6.00',
+    col5: '€1500.00',
+    col6: '€1650.00'
   },
   {
     id: 29,
-    col1: 'AAVV',
-    col2: 'Logo Projection on the façade of the Venue',
+    col1: 'Entertainment',
+    col2: 'DJ - 2 hours service, from',
     col3: 1,
-    col4: '€0.00',
-    col5: '€0.00',
-    col6: '€0.00'
+    col4: '€800.00',
+    col5: '€800.00',
+    col6: '€968.00'
   },
   {
     id: 30,
     col1: 'AAVV',
-    col2: 'Extra sound system for the cocktail area',
+    col2: 'Sound and lighting for all dinner in the venue',
+
     col3: 1,
-    col4: '€0.00',
-    col5: '€0.00',
-    col6: '€0.00'
+    col4: '€7488.09',
+    col5: '€7488.09',
+    col6: '€9,060.59'
   },
   {
     id: 31,
-    col1: 'AAVV',
-    col2: 'Platform on the lake',
-    col3: 1,
-    col4: '€0.00',
-    col5: '€0.00',
-    col6: '€0.00'
-  },
-  {
-    id: 32,
-    col1: 'AAVV',
-    col2: 'Extra sound system for the Pergola area',
-    col3: 1,
-    col4: '€0.00',
-    col5: '€0.00',
-    col6: '€0.00'
-  },
-  {
-    id: 33,
     col1: 'AAVV',
     col2: 'Photographer and Videographer',
     col3: 1,
@@ -301,8 +284,8 @@ const rows: GridRowsProp = [
     col6: '€847.00'
   },
   {
-    id: 34,
-    col1: 'Decorations',
+    id: 32,
+    col1: 'Gifts',
     col2: '(Optional) Small Orange Tree',
     col3: 0,
     col4: '€25.00',
@@ -310,8 +293,8 @@ const rows: GridRowsProp = [
     col6: '€0.00'
   },
   {
-    id: 35,
-    col1: 'Decorations',
+    id: 33,
+    col1: 'Gifts',
     col2: '(Optional) Small Olive Tree',
     col3: 0,
     col4: '€11.00',
@@ -319,8 +302,8 @@ const rows: GridRowsProp = [
     col6: '€0.00'
   },
   {
-    id: 36,
-    col1: 'Decorations',
+    id: 34,
+    col1: 'Gifts',
     col2: '(Optional) Small Olive Tree and Customised Olive Oil',
     col3: 0,
     col4: '€18.00',
@@ -328,7 +311,7 @@ const rows: GridRowsProp = [
     col6: '€0.00'
   },
   {
-    id: 37,
+    id: 35,
     col1: 'Gifts',
     col2: '(Optional) Rice Licour Bottle',
     col3: 0,
@@ -337,7 +320,7 @@ const rows: GridRowsProp = [
     col6: '€0.00'
   },
   {
-    id: 38,
+    id: 36,
     col1: 'Gifts',
     col2: '(Optional) Orange Licour Bottle',
     col3: 0,
@@ -346,7 +329,7 @@ const rows: GridRowsProp = [
     col6: '€0.00'
   },
   {
-    id: 39,
+    id: 37,
     col1: 'Gifts',
     col2: '(Optional) Bag of Rice',
     col3: 0,
@@ -355,13 +338,13 @@ const rows: GridRowsProp = [
     col6: '€0.00'
   },
   {
-    id: 40,
-    col1: 'Staffing',
-    col2: 'Onsite Event Manager ',
-    col3: 2,
-    col4: '€400.00',
-    col5: '€800.00',
-    col6: '€968.00'
+    id: 38,
+    col1: 'Miscellaneous',
+    col2: 'Extra decor and miscellaneous',
+    col3: 1,
+    col4: '€4000.00',
+    col5: '€4000.00',
+    col6: '€4840.00'
   }
 ]
 

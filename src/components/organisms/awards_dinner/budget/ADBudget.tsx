@@ -44,7 +44,6 @@ const rows: GridRowsProp = [
     col4: '€0.00',
     col5: '€0.00'
   },
-
   {
     id: 6,
     col1: 'AAVV',
