@@ -19,14 +19,15 @@ export const PageLayout = () => {
         </div>
         <div className='absolute bottom-[70px] left-[450px] right-[100px] cursor-pointer text-center'>
           <p
-            className={`text-sm border border-med_purple p-2 bg-med_white rounded-lg text-med_red font-bold ${
-              copyright ? 'hidden' : 'block'
+            id='hideMeAfter4Seconds'
+            className={`italic text-sm border border-med_purple p-2 bg-med_white rounded-lg text-med_red font-bold ${
+              copyright ? 'block' : 'hidden'
             }`}
           >
             All concepts and ideas in this proposal are the intellectual
-            property of CUTT/Events and are subject to the current copyright
-            laws. All unauthorized use, reproduction in any form, or
-            transmission to a third party is strictly prohibited.
+            property of <strong>CUTT/events</strong> and are subject to the
+            current copyright laws. All unauthorized use, reproduction in any
+            form, or transmission to a third party is strictly prohibited.
           </p>
         </div>
       </div>
