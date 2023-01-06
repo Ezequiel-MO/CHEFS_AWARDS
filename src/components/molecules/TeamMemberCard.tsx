@@ -35,7 +35,7 @@ export const TeamMemberCard: FC<Props> = ({
       </div>
       <div className='flex flex-col items-center justify-center mt-2'>
         <p className='font-bold text-lg'>{name}</p>
-        <p className='italic'>{role}</p>
+        <p className='italic text-center my-2'>{role}</p>
       </div>
       <div className='flex flex-row justify-center'>
         {labels.map((label, index) => (

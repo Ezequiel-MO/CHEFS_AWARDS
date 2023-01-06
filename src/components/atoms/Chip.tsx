@@ -12,7 +12,7 @@ export const Chip: FC<Props> = ({ label, color }) => {
       className='mx-1 px-2 py-1 text-xs font-bold rounded-full text-white'
       style={{ backgroundColor: color }}
     >
-      {label}
+      <p className='text-center text-med_white text-sm'>{label}</p>
     </Box>
   )
 }
