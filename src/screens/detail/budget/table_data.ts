@@ -129,6 +129,6 @@ export const tableDataDA: IBudget_data[] = [
     service: 'Miscellaneous',
     totalWithoutVAT: 19930.0,
     taxes: 4185.3,
-    total: 21115.3
+    total: 24115.3
   }
 ]
