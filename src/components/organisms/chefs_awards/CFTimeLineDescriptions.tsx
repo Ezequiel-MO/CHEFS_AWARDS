@@ -22,27 +22,28 @@ export const CFTimeLineDescriptions = () => {
         src={Slide2}
         alt='slide_2'
         className='hover:scale-125 transition-transform hover:-ml-16'
+        id='cf_arrivals'
       />
       <img
         src={Slide3}
         alt='slide_3'
+        id='cf_welcome_drink'
         className='hover:scale-125 transition-transform hover:-ml-16'
       />
       <img
         src={Slide4}
         alt='slide_4'
-        id='cf_welcome_drink'
         className='hover:scale-125 transition-transform hover:-ml-16'
       />
       <img
         src={Slide5}
         alt='slide_5'
+        id='cf_dinner'
         className='hover:scale-125 transition-transform hover:-ml-16'
       />
       <img
         src={Slide6}
         alt='slide_6'
-        id='cf_dinner'
         className='hover:scale-125 transition-transform hover:-ml-16'
       />
       <img
@@ -58,12 +59,12 @@ export const CFTimeLineDescriptions = () => {
       <img
         src={Slide9}
         alt='slide_9'
+        id='cf_party'
         className='hover:scale-125 transition-transform hover:-ml-16'
       />
       <img
         src={Slide10}
         alt='slide_10'
-        id='cf_party'
         className='hover:scale-125 transition-transform hover:-ml-16'
       />
     </Box>
