@@ -90,9 +90,9 @@ export const StrategicDetails = () => {
           <img src={ModernBackground} alt='modern background pattern' />
         </div>
         <li>
-          <strong>Chef Feast Sample Menu Covers</strong>
-          ... here's a couple of sample menu for the Chef Feast event, which can
-          be used as a guide for the design of the printed menu items.
+          <strong>Sample Menu Covers</strong>
+          ... here's a few sample menus for both events, which can be used as a
+          guide for the design of the printed menu items.
         </li>
         <div className='grid grid-cols-2'>
           <div>
@@ -101,14 +101,12 @@ export const StrategicDetails = () => {
           <div>
             <img src={CFMenu2} alt='chef feast menu 2' />
           </div>
-        </div>
-        <li>
-          <strong>Dinner Awards Sample Menu Cover</strong>
-          ... here's a sample menu for the Dinner Awards event, which can be
-          used as a guide for the design of the printed menu items.
-        </li>
-        <div>
-          <img src={ADMenu} alt='avant-garde dinner awards menu' />
+          <div>
+            <img src={ADMenu} alt='avant-garde dinner awards menu' />
+          </div>
+          <div>
+            <img src={ADMenu} alt='avant-garde dinner awards menu' />
+          </div>
         </div>
       </ol>
     </Paper>
