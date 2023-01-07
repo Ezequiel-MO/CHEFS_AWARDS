@@ -72,7 +72,7 @@ export const Briefing = () => {
                 </tr>
                 <tr>
                   <td className='uppercase font-bold w-40'>time :</td>
-                  <td>7pm - 10pm</td>
+                  <td>6pm - 11pm</td>
                 </tr>
                 <tr>
                   <td className='uppercase font-bold w-40'>Location :</td>
