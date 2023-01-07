@@ -28,9 +28,10 @@ export const CFVenueDetails = () => {
       </Typography>
       <div className='grid grid-cols-2'>
         <div className='mt-5'>
-          <h1 className='uppercase text-xl text-center font-bold my-5'>
-            Location
-          </h1>
+          <div className='uppercase text-xl text-center font-bold my-5'>
+            Location{' '}
+            <span className='text-sm italic'>20 mins from Valencia</span>
+          </div>
           <LocationWrapper venue='Campo Anibal' />
         </div>
         <div className='my-5'>
