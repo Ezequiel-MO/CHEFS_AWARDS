@@ -1,5 +1,5 @@
-import CUTT_LOGO from '../../../assets/logos/cutt_logo.png'
-import SEE_NETWORK from '../../../assets/logos/see_logo.jpg'
+import CUTT_LOGO from '../../../assets/logos/CUTT_logo.png'
+import SEE_NETWORK from '../../../assets/logos/SEE_logo.jpg'
 
 interface ModalProps {
   setModalOpen: React.Dispatch<React.SetStateAction<boolean>>
