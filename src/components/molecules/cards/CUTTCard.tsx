@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Modal from '../modal/Modal'
-import CUTT_Logo from '../../../assets/logos/CUTT_Logo.png'
+import CUTT_Logo from '../../../assets/logos/CUTT_logo.png'
 
 export const CUTTCard = () => {
   const [modalOpen, setModalOpen] = useState<boolean>(false)
