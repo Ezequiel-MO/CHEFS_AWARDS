@@ -11,7 +11,7 @@ export const ADVenueDetails = () => {
       <Box className='cursor-pointer'>
         <video src={CACVideo} autoPlay={true} controls={true} />
         <ol className='my-5'>
-          <li className='font-bold mb-5'>
+          <li className='bg-med_blue hover:bg-med_blue_light text-med_white hover:text-med_purple mb-5'>
             Hemisferic : Red Carpet and Welcome Reception
           </li>
           <p className='italic indent-5'>
@@ -47,7 +47,7 @@ export const ADVenueDetails = () => {
             the shade, we will have natural fresh air from the Mediterranean
             Sea, which is less than 1 km away.
           </p>
-          <li className='font-bold mb-5'>
+          <li className='bg-med_blue hover:bg-med_blue_light text-med_white hover:text-med_purple mb-5'>
             Palau de les Arts : Awards Ceremony
           </li>
           <p className='italic indent-5'>
@@ -59,7 +59,9 @@ export const ADVenueDetails = () => {
             will have a specially designed screen for the group, as well as a
             live concert by the Palau Chamber Orchestra.
           </p>
-          <li className='font-bold mb-5'>Umbracle : After Party</li>
+          <li className='bg-med_blue hover:bg-med_blue_light text-med_white hover:text-med_purple mb-5'>
+            Umbracle : After Party
+          </li>
           <p className='italic indent-5'>
             After the awards ceremony, we will have a grand party in the
             <strong> Umbracle</strong> , where we will have drinks, a DJ and a

@@ -31,10 +31,18 @@ export const AwardsDinner = () => {
               Click anywhere on the list for a detailed schedule ...
             </p>
             <ol>
-              <li>6pm : Arrival By Bus</li>
-              <li>6pm - 8pm : Welcome and Red Carpet</li>
-              <li>6pm - 8pm : Gala Dinner </li>
-              <li>8pm - 8.45pm : Walk to Palau de les Arts</li>
+              <li className='bg-med_purple hover:bg-med_blue text-med_white'>
+                6pm : Arrival By Bus
+              </li>
+              <li className='bg-med_purple hover:bg-med_blue text-med_white'>
+                6pm - 8pm : Welcome and Red Carpet
+              </li>
+              <li className='bg-med_purple hover:bg-med_blue text-med_white'>
+                6pm - 8pm : Gala Dinner{' '}
+              </li>
+              <li className='bg-med_purple hover:bg-med_blue text-med_white'>
+                8pm - 8.45pm : Walk to Palau de les Arts
+              </li>
             </ol>
           </Link>
         </AccordionParagraph>
