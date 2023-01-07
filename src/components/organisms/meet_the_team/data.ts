@@ -67,7 +67,7 @@ export const teamMembers = [
   {
     avatar: Sara,
     name: 'Sarah Dambruoso',
-    role: 'Project Manager / Guest Relations',
+    role: 'Project Manager / Guest Relations & Management',
     labels: [labels[7], labels[8]],
     description:
       'Mrs. Trouble-shooter -Sarah is a spicy mix of German efficiency and Latin soul based on Spanish territory. With professionalism and dedication, she will advise you to turn your projects into unforgettable success!'

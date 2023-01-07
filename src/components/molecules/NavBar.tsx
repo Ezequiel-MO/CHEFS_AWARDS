@@ -1,7 +1,7 @@
 import { NavLink, useNavigate } from 'react-router-dom'
 import { Box, Link as MuiLink, Button } from '@mui/material'
 import { Icon } from '@iconify/react'
-import Logo from '../../assets/logo.jpg'
+import Logo from '../../assets/logos/logo.jpg'
 import { useScrollDirection } from '../../hooks/useScrollDirection'
 
 export const Navbar = () => {

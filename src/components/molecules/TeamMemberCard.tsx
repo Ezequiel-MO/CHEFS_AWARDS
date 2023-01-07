@@ -24,7 +24,7 @@ export const TeamMemberCard: FC<Props> = ({
   more
 }) => {
   return (
-    <div className='max-w-sm border-2 px-2 py-5 rounded-lg overflow-hidden flex flex-col'>
+    <div className='cursor-grab max-w-md px-2 py-5 rounded-xl overflow-hidden flex flex-col border border-dashed border-1 hover:border-none hover:shadow-2xl transition-shadow'>
       <div className='flex justify-center'>
         <Avatar
           alt={name}
@@ -44,8 +44,10 @@ export const TeamMemberCard: FC<Props> = ({
           </div>
         ))}
       </div>
-      <div className='flex flex-col items-center justify-center mt-2'>
-        <p className='italic text-lg text-center my-2'>{description}</p>
+      <div className='flex flex-col items-center justify-center mt-2 overflow-y-clip'>
+        <p className='italic text-lg text-left my-2 px-2 line-clamp-4 hover:line-clamp-none'>
+          {description}
+        </p>
         <h3>
           <span className='mr-2'>
             <MailOutlineOutlined />

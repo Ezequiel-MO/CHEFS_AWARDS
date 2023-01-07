@@ -1,3 +1,6 @@
+import CUTT_LOGO from '../../../assets/logos/cutt_logo.png'
+import SEE_NETWORK from '../../../assets/logos/see_logo.jpg'
+
 interface ModalProps {
   setModalOpen: React.Dispatch<React.SetStateAction<boolean>>
 }
@@ -15,10 +18,17 @@ const Modal = ({ setModalOpen }: ModalProps) => {
         >
           X
         </span>
-        <div className='absolute top-[20px] right-[50px] left-[50px] bottom-[20px] bg-med_white p-5 rounded-lg overflow-y-auto no-scrollbar cursor-grab'>
-          <div className='px-5 py-2'>
-            <p className='text-lg font-bold text-center my-5'>
-              The story behind CUTT/Events
+        <div className='absolute top-[20px] right-[50px] left-[50px] bottom-[20px] bg-med_white px-20 rounded-lg overflow-y-auto no-scrollbar cursor-grab'>
+          <div>
+            <p className='text-xl font-bold flex flex-row items-center justify-center'>
+              The story behind
+              <span>
+                <img
+                  className='w-40 h-40 object-contain'
+                  src={CUTT_LOGO}
+                  alt='CUTT Logo'
+                />
+              </span>
             </p>
             <p className='indent-5'>
               <strong>CUTT/Events </strong>
@@ -28,31 +38,44 @@ const Modal = ({ setModalOpen }: ModalProps) => {
               two entrepreneurs: <strong>Montse Miranda</strong> and{' '}
               <strong>Oliver Martinez</strong>.
             </p>
-            <p className='indent-5'>
+            <p className='my-2'>
               Montse and Oliver had been working together since 2002 in one of
               the biggest DMCs in Spain. They brought to the company their
               experience in the local market and in big events (such as
               America's Cup, F1, and Standalone congress with Johnson & Johnson
               for example) as well as the care and attention to the client,
-              totally personalized in each project. This was the approach we
-              needed to be different from other DMCs: everything at{' '}
-              <strong>CUTT/Events </strong> is done "A la carte".
+              totally personalized in each project.
             </p>
             <p className='indent-5'>
               Our project is strong and has survived despite the adversities: we
               are still in the market after the economic crisis of 2009-2010 and
               the COVID pandemic.
             </p>
-            <p className='text-lg font-bold text-center my-3'>
-              CUTT/Events & SEE Network Projects
+            <p className='text-xl font-bold flex flex-row items-center justify-center'>
+              <span>
+                <img
+                  className='w-40 h-40 object-contain'
+                  src={CUTT_LOGO}
+                  alt='CUTT Logo'
+                />
+              </span>
+              & {'   '}
+              <span>
+                <img
+                  className='w-40 h-40 object-contain'
+                  src={SEE_NETWORK}
+                  alt='SEE Network Logo'
+                />
+              </span>
+              <span>Projects</span>
             </p>
             <p className='indent-5'>
               A long collaboration has been going on for many years between
-              CUTT/events and SEE Network. Whenever we have large or special
-              project in view, we both like to work together since we complement
-              each other to perfection.
+              <strong>CUTT/events</strong> and <strong>SEE Network</strong>.
+              Whenever we have large or special project in view, we both like to
+              work together since we complement each other to perfection.
             </p>
-            <p className='indent-5'>
+            <p className='my-2'>
               <strong>SEE Network</strong> is specialised in car launches and
               large scale projects, with a similar approach.{' '}
               <strong>CUTT/Events </strong> has expertise in customer service
