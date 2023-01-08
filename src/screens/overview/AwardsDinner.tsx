@@ -32,16 +32,19 @@ export const AwardsDinner = () => {
             </p>
             <ol>
               <li className='bg-med_purple hover:bg-med_blue text-med_white'>
-                6pm : Arrival By Bus
+                6pm : Arrivals
               </li>
               <li className='bg-med_purple hover:bg-med_blue text-med_white'>
-                6pm - 8pm : Welcome and Red Carpet
+                6pm - 8pm : Red Carpet and Registration
               </li>
               <li className='bg-med_purple hover:bg-med_blue text-med_white'>
-                6pm - 8pm : Gala Dinner{' '}
+                6pm - 8pm : Cocktail Reception{' '}
               </li>
               <li className='bg-med_purple hover:bg-med_blue text-med_white'>
                 8pm - 8.45pm : Walk to Palau de les Arts
+              </li>
+              <li className='bg-med_purple hover:bg-med_blue text-med_white'>
+                8.45pm - 10.00pm : Awards Ceremony
               </li>
             </ol>
           </Link>
