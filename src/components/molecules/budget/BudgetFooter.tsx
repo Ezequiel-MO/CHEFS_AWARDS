@@ -17,22 +17,26 @@ export const BudgetFooter = ({ event }: Props) => {
     <TableFooter>
       <TableRow>
         <TableCell
-          colSpan={4}
+          colSpan={2}
           className={`${bg_color} !text-right !font-bold !bg-opacity-50 !text-lg `}
         >
           TOTAL
         </TableCell>
         <TableCell
-          className={`${bg_color} !text-right !font-bold !bg-opacity-50 !text-lg `}
+          className={`${bg_color} !text-left !font-bold !bg-opacity-50 !text-lg `}
         >
           {accounting.formatMoney(
-            tableData.reduce((acc, row) => acc + row.total, 0),
+            tableData.reduce((acc, cur) => acc + cur.totalWithoutVAT, 0),
             '€',
             0,
             ',',
             '.'
           )}
         </TableCell>
+        <TableCell
+          colSpan={2}
+          className={`${bg_color} !text-right !font-bold !bg-opacity-50 !text-lg `}
+        ></TableCell>
       </TableRow>
     </TableFooter>
   )

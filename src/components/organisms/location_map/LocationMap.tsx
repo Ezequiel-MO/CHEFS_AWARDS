@@ -1,5 +1,10 @@
 import { useState, useMemo, useCallback, useEffect } from 'react'
-import { GoogleMap, MarkerF, InfoWindowF } from '@react-google-maps/api'
+import {
+  GoogleMap,
+  MarkerF,
+  InfoWindowF,
+  StreetViewPanorama
+} from '@react-google-maps/api'
 import { Typography } from '@mui/material'
 import './map.css'
 
@@ -86,7 +91,14 @@ export const LocationMap = ({ venue }: IProps) => {
       streetViewControl: true,
       scaleControl: true,
       rotateControl: false,
-      fullscreenControl: false
+      fullscreenControl: false,
+      StreetViewPanoramaOptions: {
+        position: location.coords,
+        pov: {
+          heading: 34,
+          pitch: 10
+        }
+      }
     }),
 
     []
