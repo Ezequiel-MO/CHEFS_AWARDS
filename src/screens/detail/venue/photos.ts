@@ -7,7 +7,6 @@ import DINING1 from '../../../assets/chef_awards/carousel/dining1.jpg'
 import DINING2 from '../../../assets/chef_awards/carousel/dining2.jpg'
 import FACADE from '../../../assets/chef_awards/carousel/facade.jpg'
 import FACADE2 from '../../../assets/chef_awards/carousel/facade2.jpg'
-import FACADE3 from '../../../assets/chef_awards/carousel/facade3.jpg'
 import FACADE4 from '../../../assets/chef_awards/carousel/facade4.jpg'
 import FACADE5 from '../../../assets/chef_awards/carousel/facade5.jpg'
 import FACADE6 from '../../../assets/chef_awards/carousel/facade6.jpg'
@@ -28,37 +27,37 @@ export const campo_anibal_photos = [
   {
     src: BARRELS1,
     alt: 'Barrels_1',
-    desc: 'Barrels area - cocktail'
+    desc: 'Barrels area - Welcome Drink'
   },
   {
     src: BARRELS2,
     alt: 'Barrels_2',
-    desc: 'Panoramic view of the Barrels area - cocktail'
+    desc: 'Panoramic - Welcome Drink'
   },
   {
     src: BARRELS3,
     alt: 'Barrels_3',
-    desc: 'Barrels area with sunlight- cocktail'
+    desc: 'Barrels area with sunlight- Welcome Drink'
   },
   {
     src: CHIMNEY1,
     alt: 'Chimney_1',
-    desc: 'Chimney room'
+    desc: 'Bad weather option for standing dinner'
   },
   {
     src: CHIMNEY2,
     alt: 'Chimney_2',
-    desc: 'Chimney room ceiling'
+    desc: 'Bad weather option for standing dinner'
   },
   {
     src: DINING1,
     alt: 'Dining_1',
-    desc: 'Dining room with lighting'
+    desc: 'Bad weather option for standing dinner'
   },
   {
     src: DINING2,
     alt: 'Dining_2',
-    desc: 'Dining room'
+    desc: 'Bad weather option for standing dinner'
   },
   {
     src: FACADE,
@@ -68,17 +67,12 @@ export const campo_anibal_photos = [
   {
     src: FACADE2,
     alt: 'Facade_2',
-    desc: 'House entrance'
-  },
-  {
-    src: FACADE3,
-    alt: 'Facade_3',
-    desc: 'Patio area panoramic view'
+    desc: 'House entrance - From Photo call to Welcome Drink area'
   },
   {
     src: FACADE4,
     alt: 'Facade_4',
-    desc: 'Panoramic view from the gardens'
+    desc: 'Other spaces - view of the venue'
   },
   {
     src: FACADE5,
@@ -98,12 +92,12 @@ export const campo_anibal_photos = [
   {
     src: GARDENS,
     alt: 'Gardens',
-    desc: 'Gardens'
+    desc: 'Gardens -Entertainment, DJ area'
   },
   {
     src: GARDENS1,
     alt: 'Gardens_1',
-    desc: 'Gardens'
+    desc: 'Gardens- Entertainment area'
   },
   {
     src: PANORAMIC1,
@@ -113,12 +107,12 @@ export const campo_anibal_photos = [
   {
     src: PANORAMIC2,
     alt: 'Panoramic_2',
-    desc: 'Panoramic view from Bus parking area'
+    desc: 'Parking, Mascletà Area'
   },
   {
     src: PANORAMIC3,
     alt: 'Panoramic_3',
-    desc: 'Panoramic view from the Orange grove'
+    desc: 'Orange trees, Parking and Mascletà area'
   },
   {
     src: PATIO1,
@@ -133,17 +127,17 @@ export const campo_anibal_photos = [
   {
     src: PERGOLA1,
     alt: 'Pergola_1',
-    desc: 'Pergola'
+    desc: 'Pergola- Standing Dinner area'
   },
   {
     src: PERGOLA2,
     alt: 'Pergola_2',
-    desc: 'Pergola'
+    desc: 'Pergola - Standing Dinner / Entertainment area'
   },
   {
     src: PERGOLA3,
     alt: 'Pergola_3',
-    desc: 'Pergola'
+    desc: 'Pergola - Standing Dinner / Entertainment area'
   },
   {
     src: TORRE1,
