@@ -136,12 +136,12 @@ const CalleMayor_text = () => {
         discourage it because{' '}
       </p>
       <ul className='p-2'>
-        <li className='bg-med_green text-med_white p-2 rounded-lg my-2 text-sm hover:opacity-90'>
+        <li className='bg-med_purple text-med_white p-2 rounded-lg my-2 text-sm hover:opacity-90'>
           ... at 6:00pm in Valencia, expect high temperatures and no shade. The
           large glass area will be overheated and uncomfortable since it
           receives direct sunlight all day.
         </li>
-        <li className='bg-med_green text-med_white p-2 rounded-lg my-2 text-sm hover:opacity-90'>
+        <li className='bg-med_purple text-med_white p-2 rounded-lg my-2 text-sm hover:opacity-90'>
           ... the museum is open to the public until 8:00pm. The 'Calle Mayor'
           is connected to the floors where the interactive experiments of the
           museum are located, so the influx of visitors and subsequent noise can
@@ -163,10 +163,10 @@ const Arquerias_text = () => {
         reasons:{' '}
       </p>
       <ul className='p-2'>
-        <li className='bg-med_green text-med_white p-2 rounded-lg my-2 text-sm hover:opacity-90'>
+        <li className='bg-med_purple text-med_white p-2 rounded-lg my-2 text-sm hover:opacity-90'>
           ... for our purposes, this area has very low ceilings
         </li>
-        <li className='bg-med_green text-med_white p-2 rounded-lg my-2 text-sm hover:opacity-90'>
+        <li className='bg-med_purple text-med_white p-2 rounded-lg my-2 text-sm hover:opacity-90'>
           ... the management of 'CAC' has already informed us that this area is
           contracted for some summer concerts
         </li>
@@ -188,7 +188,7 @@ const Umbracle_text = () => {
         Dinner
       </p>
       <ul className='p-2'>
-        <li className='bg-med_green text-med_white p-2 rounded-lg my-2 text-sm hover:opacity-90'>
+        <li className='bg-med_purple text-med_white p-2 rounded-lg my-2 text-sm hover:opacity-90'>
           ... the main weakness would be the back up option, -{' '}
           <strong>Mya</strong>, Mya is below the <strong> Umbracle</strong>
         </li>

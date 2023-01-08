@@ -24,7 +24,7 @@ const rows: GridRowsProp = [
   {
     id: 3,
     col1: 'Venue',
-    col2: 'Perimetral Ring Hemisferic - Set up June 18th, 19th, 21st derig',
+    col2: 'Hemisferic - 2 days set up & 1 day dismantle rate',
     col3: 3,
     col4: '€1,500.00',
     col5: '€4,500.00',
@@ -42,7 +42,7 @@ const rows: GridRowsProp = [
   {
     id: 5,
     col1: 'AAVV',
-    col2: 'Platform in North Lake as extra space for standing dinner in Hemisferic, sound and lighting from',
+    col2: 'Platform North lake',
     col3: 1,
     col4: '€66,650.00',
     col5: '€66,650.00',
@@ -78,7 +78,7 @@ const rows: GridRowsProp = [
   {
     id: 9,
     col1: 'Decorations',
-    col2: 'Photocall for all guests before to enty in the venue - Both sides: 597 x 228 ',
+    col2: 'Photocall both sides',
     col3: 1,
     col4: '€1,800.00',
     col5: '€1,800.00',
@@ -87,7 +87,7 @@ const rows: GridRowsProp = [
   {
     id: 10,
     col1: 'Decorations',
-    col2: 'Optional -Photocall for all guests before to enty in the venue - retroprojection - Both sides: 4000x2000 ',
+    col2: 'Optional - Photocall retroprojection',
     col3: 1,
     col4: '€3,8081.84',
     col5: '€0.00',
@@ -114,7 +114,7 @@ const rows: GridRowsProp = [
   {
     id: 13,
     col1: 'Decorations',
-    col2: 'Tents to cover the tables to provide some shadow to the tables from ',
+    col2: 'Tents for registration area',
     col3: 1,
     col4: '€3,500.00',
     col5: '€3,500.00',
@@ -330,7 +330,7 @@ const rows: GridRowsProp = [
   {
     id: 37,
     col1: 'Entertainment',
-    col2: 'Dance with mapping to "Welcome" the guests to Palau de les Arts  from',
+    col2: 'Dance with mapping "Welcome" to Auditori',
     col3: 1,
     col4: '€4,700.00',
     col5: '€4,700.00',
@@ -339,7 +339,7 @@ const rows: GridRowsProp = [
   {
     id: 38,
     col1: 'Entertainment',
-    col2: 'Optional  - Naturama show to say "Welcome" to Palau de les Arts',
+    col2: 'Optional - Naturama show for "Welcome" to Auditori',
     col3: 1,
     col4: '€5,815.00',
     col5: '€0.00',
@@ -357,7 +357,7 @@ const rows: GridRowsProp = [
   {
     id: 40,
     col1: 'Miscellaneous',
-    col2: 'Power generator for extra power for light and sound in Hemisferic from',
+    col2: 'Power generator for extra power',
     col3: 1,
     col4: '€12,930.00',
     col5: '€12,930.00',

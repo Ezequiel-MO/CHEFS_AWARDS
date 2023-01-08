@@ -6,7 +6,7 @@ const rows: GridRowsProp = [
   {
     id: 1,
     col1: 'Venue',
-    col2: 'Dry Hire of Campo Anibal, min. 250 attendees, included in the food',
+    col2: 'Hire of Campo Anibal, min. 250 pax, incl in the food',
     col3: 1,
     col4: '€0.00',
     col5: '€0.00',
@@ -69,7 +69,7 @@ const rows: GridRowsProp = [
   {
     id: 8,
     col1: 'Gifts',
-    col2: 'Personalized with 50 Restaurant logo - Valencian Black t-shirt and scarf',
+    col2: 'Personalized Valencian Black t-shirt & Scarf',
     col3: 250,
     col4: '€28',
     col5: '€7000.00',
@@ -114,7 +114,7 @@ const rows: GridRowsProp = [
   {
     id: 13,
     col1: 'Food & Beverage',
-    col2: 'Standing Buffet, 20 canapes + 1 individual dish w/ drinks 7pm-9pm, from',
+    col2: 'Standing buffet dinner',
     col3: 250,
     col4: '€47.50',
     col5: '€1,1875.00',
@@ -213,7 +213,7 @@ const rows: GridRowsProp = [
   {
     id: 24,
     col1: 'Entertainment',
-    col2: 'Guitarist Background music during the standing dinner to be placed in the pool area next to dinner standing area',
+    col2: 'Guitarist background music during standing dinner',
     col3: 1,
     col4: '€750.00',
     col5: '€750.00',
