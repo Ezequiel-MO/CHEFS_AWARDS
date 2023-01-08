@@ -1,8 +1,23 @@
+import { useState } from 'react'
 import { Paper, Typography, Box } from '@mui/material'
-import { LocationWrapper } from '../../components/organisms'
-import CACVideo from '../../assets/CAC.mp4'
+import { LocationWrapper } from '../../../../components/organisms'
+import { Icon } from '@iconify/react'
+import CACVideo from '../../../../assets/CAC.mp4'
+import { Slider } from '../../../../components/molecules'
+import { hemisferic_photos, palau_photos, umbracle_photos } from './photos'
+
+interface WhosOpen {
+  hemisferic?: boolean
+  palau?: boolean
+  umbracle?: boolean
+}
 
 export const ADVenueDetails = () => {
+  const [open, setOpen] = useState<WhosOpen>({
+    hemisferic: false,
+    palau: false,
+    umbracle: false
+  })
   return (
     <Paper className='w-[1000px] rounded-xl p-5'>
       <Typography variant='h1' className='bg-med_blue text-med_white p-2'>
@@ -11,7 +26,7 @@ export const ADVenueDetails = () => {
       <Box className='cursor-pointer'>
         <video src={CACVideo} autoPlay={true} controls={true} />
         <ol className='my-5'>
-          <li className='bg-med_blue hover:bg-med_blue_light text-med_white hover:text-med_purple mb-5'>
+          <li className='bg-med_purple hover:bg-med_blue_light text-med_white hover:text-med_purple mb-5'>
             Hemisferic : Red Carpet and Welcome Reception
           </li>
           <p className='italic indent-5'>
@@ -23,7 +38,7 @@ export const ADVenueDetails = () => {
               dinner
             </strong>{' '}
             , as opposed to the <strong> Principe Felipe Museum </strong> or
-            <strong>Sala Arquerias</strong> or even the{' '}
+            <strong> Sala Arquerias</strong> or even the{' '}
             <strong> Umbracle</strong>.
           </p>
           <br />
@@ -47,7 +62,24 @@ export const ADVenueDetails = () => {
             the shade, we will have natural fresh air from the Mediterranean
             Sea, which is less than 1 km away.
           </p>
-          <li className='bg-med_blue hover:bg-med_blue_light text-med_white hover:text-med_purple mb-5'>
+          <div className='flex flex-col justify-center items-center'>
+            <button
+              className='flex items-center uppercase bg-med_blue hover:bg-med_blue_light text-med_white font-bold py-4 px-8 rounded my-5'
+              onClick={() =>
+                setOpen({ ...open, hemisferic: !open['hemisferic'] })
+              }
+            >
+              <span className='mr-5'>
+                <Icon icon='mdi:hand-pointing-right' width={30} />
+              </span>
+              Click here to see the photos of the Hemisferic
+            </button>
+            {open['hemisferic'] && (
+              <Slider pics={hemisferic_photos} event='da' />
+            )}
+          </div>
+
+          <li className='bg-med_purple hover:bg-med_blue_light text-med_white hover:text-med_purple mb-5 text-center'>
             Palau de les Arts : Awards Ceremony
           </li>
           <p className='italic indent-5'>
@@ -59,7 +91,19 @@ export const ADVenueDetails = () => {
             will have a specially designed screen for the group, as well as a
             live concert by the Palau Chamber Orchestra.
           </p>
-          <li className='bg-med_blue hover:bg-med_blue_light text-med_white hover:text-med_purple mb-5'>
+          <div className='flex flex-col justify-center items-center'>
+            <button
+              className='flex items-center uppercase bg-med_blue hover:bg-med_blue_light text-med_white font-bold py-4 px-8 rounded my-5'
+              onClick={() => setOpen({ ...open, palau: !open['palau'] })}
+            >
+              <span className='mr-5'>
+                <Icon icon='mdi:hand-pointing-right' width={30} />
+              </span>
+              Click here to see the photos of Palau de les Arts
+            </button>
+            {open['palau'] && <Slider pics={palau_photos} event='da' />}
+          </div>
+          <li className='bg-med_purple hover:bg-med_blue_light text-med_white hover:text-med_purple mb-5'>
             Umbracle : After Party
           </li>
           <p className='italic indent-5'>
@@ -67,10 +111,30 @@ export const ADVenueDetails = () => {
             <strong> Umbracle</strong> , where we will have drinks, a DJ and a
             live music.
           </p>
-        </ol>
-        <div className='border border-med_brown '>
+          <div className='flex flex-col justify-center items-center'>
+            <button
+              className='flex items-center uppercase bg-med_blue hover:bg-med_blue_light text-med_white font-bold py-4 px-8 rounded my-5'
+              onClick={() => setOpen({ ...open, umbracle: !open['umbracle'] })}
+            >
+              <span className='mr-5'>
+                <Icon icon='mdi:hand-pointing-right' width={30} />
+              </span>
+              Click here to see the photos of the Umbracle
+            </button>
+            {open['umbracle'] && <Slider pics={umbracle_photos} event='da' />}
+          </div>
+          <li className='bg-med_purple hover:bg-med_blue_light text-med_white hover:text-med_purple mb-5'>
+            City of Arts and Sciences : Location Map
+          </li>
+          <p className='italic indent-5 my-5'>
+            The
+            <strong> City of Arts & Sciences</strong> , is conveniently located
+            between <strong>Valencia's Old Town</strong> and the beach of{' '}
+            <strong>La Malvarrosa</strong> , and is easily accessible by all
+            sorts of transport.
+          </p>
           <LocationWrapper venue='CAC' />
-        </div>
+        </ol>
       </Box>
     </Paper>
   )
