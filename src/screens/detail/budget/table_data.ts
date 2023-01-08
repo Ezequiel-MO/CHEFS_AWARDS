@@ -24,7 +24,7 @@ export const tableDataCF: IBudget_data[] = [
   },
   {
     category: 'Staffing',
-    service: 'All staffing, incl Event Management, Hostesses, etc',
+    service: 'Staffing, incl the Falleras',
     totalWithoutVAT: 560.0,
     taxes: 117.6,
     total: 677.6
@@ -91,7 +91,7 @@ export const tableDataDA: IBudget_data[] = [
   },
   {
     category: 'Staffing',
-    service: 'All staffing, incl Event Management, Hostesses, etc',
+    service: 'Staffing, incl manning the registration desk, etc',
     totalWithoutVAT: 2352.0,
     taxes: 493.92,
     total: 2845.92
