@@ -72,7 +72,7 @@ export const ADVenueDetails = () => {
               <span className='mr-5'>
                 <Icon icon='mdi:hand-pointing-right' width={30} />
               </span>
-              Click here to see the photos of the Hemisferic
+              Toggle here to open/close the photo gallery of the Hemisferic
             </button>
             {open['hemisferic'] && (
               <Slider pics={hemisferic_photos} event='da' />
@@ -99,7 +99,7 @@ export const ADVenueDetails = () => {
               <span className='mr-5'>
                 <Icon icon='mdi:hand-pointing-right' width={30} />
               </span>
-              Click here to see the photos of Palau de les Arts
+              Toggle here to open/close the photo gallery of Palau de les Arts
             </button>
             {open['palau'] && <Slider pics={palau_photos} event='da' />}
           </div>
@@ -119,7 +119,7 @@ export const ADVenueDetails = () => {
               <span className='mr-5'>
                 <Icon icon='mdi:hand-pointing-right' width={30} />
               </span>
-              Click here to see the photos of the Umbracle
+              Toggle here to open/close the photos of Umbracle
             </button>
             {open['umbracle'] && <Slider pics={umbracle_photos} event='da' />}
           </div>
