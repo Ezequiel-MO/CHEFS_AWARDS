@@ -80,14 +80,14 @@ export const ADVenueDetails = () => {
           </div>
 
           <li className='bg-med_purple hover:bg-med_blue_light text-med_white hover:text-med_purple mb-5 text-center'>
-            Palau de les Arts : Awards Ceremony
+            Palau de Les Arts : Awards Ceremony
           </li>
           <p className='italic indent-5'>
             At 8:00pm, we will announce that it is time to walk to the{' '}
-            <strong>Palau de les Arts</strong> , where, at the 11th floor, in
+            <strong>Palau de Les Arts</strong> , where, at the 11th floor, in
             the Auditori, we will have the awards ceremony. We propose "Tania
             Llasera as the night M.C, a well-known journalist and writer of
-            motivational books. In the <strong>Palau de les Arts</strong> we
+            motivational books. In the <strong>Palau de Les Arts</strong> we
             will have a specially designed screen for the group, as well as a
             live concert by the Palau Chamber Orchestra.
           </p>
@@ -99,7 +99,7 @@ export const ADVenueDetails = () => {
               <span className='mr-5'>
                 <Icon icon='mdi:hand-pointing-right' width={30} />
               </span>
-              Toggle here to open/close the photo gallery of Palau de les Arts
+              Toggle here to open/close the photo gallery of Palau de Les Arts
             </button>
             {open['palau'] && <Slider pics={palau_photos} event='da' />}
           </div>

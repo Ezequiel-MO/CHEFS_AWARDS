@@ -10,10 +10,10 @@ export const ADOtherVenues = () => {
     >
       <p className='indent-5'>
         For this event , we have decided to offer the{' '}
-        <strong>Hemisferic, Palau de les Arts, and Umbracle</strong> for the
+        <strong>Hemisferic, Palau de Les Arts, and Umbracle</strong> for the
         party, but we have also meticulously researched other areas of the CAC
         that could be used for the event, and finally decided on the{' '}
-        <strong> Hemisferic , Palau de les Arts, and Umbracle </strong> for the
+        <strong> Hemisferic , Palau de Les Arts, and Umbracle </strong> for the
         following reasons:
       </p>
       <div className='min-h-52 px-5 my-5 flex cursor-pointer justify-center'>

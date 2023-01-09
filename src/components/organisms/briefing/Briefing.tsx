@@ -21,7 +21,7 @@ export const Briefing = () => {
             World’s 50 Best Restaurants Awards Ceremony
           </strong>{' '}
           is the most prestigious event in the global restaurant industry
-          calendar. It is a celebration of the world’s best restaurants, chefs
+          calendar. It is a celebration of the world’s best restaurants, chefs,
           and industry leaders. <br />
           The event programme is spread across 4 to 5 days and includes, but is
           not limited to:
@@ -36,8 +36,8 @@ export const Briefing = () => {
           <li> The World’s 50 Best Restaurants Awards Ceremony. </li>
         </ol>
         <p>
-          Each events’ concept is detailed, they are all on invitation only, The
-          programme culminates with the Awards Ceremony – a livestreamed live
+          Each event's concept is detailed, they are all on invitation only, The
+          programme culminates with the Awards Ceremony – a live-streamed live
           event - recognised as the Oscars of Gastronomy.{' '}
         </p>
         <p>The Event program will take place in Valencia in June 2023.</p>
@@ -50,7 +50,7 @@ export const Briefing = () => {
         </p>
         <p>
           In this presentation, we will work on our creative concept proposal
-          for the 2 events within the programmed both listed below:
+          for the 2 events within the program both listed below:
         </p>
         <div className='min-h-52 px-5 my-5 flex cursor-pointer'>
           <div className='bg-[#fff] rounded-md shadow-xl p-5 border border-l-med_purple hover:transform hover:scale-110 hover:-rotate-1 hover:transition-all hover:duration-500'>

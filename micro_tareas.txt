@@ -14,11 +14,14 @@
 * Sources of inspiration : al hacer hover, efecto de zoom sobre la foto , sin salirse del marco.
 *Hemisferic - The Venue : hacer un botón que ponga view the 3D Model, y que lleve al link que hay dentro de la diapo
 *Otras venues estudiadas
-*Textos de hemisferic, palau de les arts y umbracle, van entre el video y el Mapa
+*Textos de hemisferic, Palau de Les Arts y umbracle, van entre el video y el Mapa
 
 hacer unos VenueCards con Calle Mayor, Arquerias, Umbracle para cena, y Vestibulo Auditori
 Montse - faltan fotos de cada una de las cosas
 descripcion de porque no el vestíbulo
+
+
+
 
 
 

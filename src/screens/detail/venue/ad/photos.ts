@@ -57,7 +57,7 @@ export const palau_photos = [
   {
     src: Palau1,
     alt: 'Palau_1',
-    desc: 'Palau de les Arts - Façade'
+    desc: 'Palau de Les Arts - Façade'
   },
   {
     src: Palau2,

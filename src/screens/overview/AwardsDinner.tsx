@@ -41,7 +41,7 @@ export const AwardsDinner = () => {
                 6pm - 8pm : Cocktail Reception{' '}
               </li>
               <li className='bg-med_purple hover:bg-med_blue text-med_white'>
-                8pm - 8.45pm : Walk to Palau de les Arts
+                8pm - 8.45pm : Walk to Palau de Les Arts
               </li>
               <li className='bg-med_purple hover:bg-med_blue text-med_white'>
                 8.45pm - 10.00pm : Awards Ceremony

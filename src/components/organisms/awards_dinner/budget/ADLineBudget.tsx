@@ -249,7 +249,7 @@ const rows: GridRowsProp = [
   {
     id: 28,
     col1: 'Entertainment',
-    col2: ' Akuris show they walk to Palau de les Arts from  ',
+    col2: ' Akuris show they walk to Palau de Les Arts from  ',
     col3: 1,
     col4: '€13,520.00',
     col5: '€13,520.00',
@@ -258,7 +258,7 @@ const rows: GridRowsProp = [
   {
     id: 29,
     col1: 'Venue',
-    col2: 'Cleaning Auditori - Palau de les Arts ',
+    col2: 'Cleaning Auditori - Palau de Les Arts ',
     col3: 1,
     col4: '€307.22',
     col5: '€307.22',
@@ -267,7 +267,7 @@ const rows: GridRowsProp = [
   {
     id: 30,
     col1: 'Venue',
-    col2: 'Security - control access - Palau de les Arts',
+    col2: 'Security - control access - Palau de Les Arts',
     col3: 1,
     col4: '€500.00',
     col5: '€500.00',
@@ -276,7 +276,7 @@ const rows: GridRowsProp = [
   {
     id: 31,
     col1: 'Venue',
-    col2: 'Hire Cost Auditori - Palau de les Arts Reina Sofia',
+    col2: 'Hire Cost Auditori - Palau de Les Arts Reina Sofia',
     col3: 1,
     col4: '€20,000.00',
     col5: '€20,000.00',

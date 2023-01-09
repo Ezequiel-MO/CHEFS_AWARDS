@@ -531,7 +531,7 @@ const rows: GridRowsProp = [
   {
     id: 19,
     col1: 'Venue',
-    col2: 'Hire Cost Auditori - Palau de les Arts Reina Sofia',
+    col2: 'Hire Cost Auditori - Palau de Les Arts Reina Sofia',
     col3: 1,
     col4: '€20,000.00',
     col5: '€20,000.00',

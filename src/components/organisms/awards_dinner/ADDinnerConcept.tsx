@@ -12,7 +12,7 @@ export const ADDinnerConcept = () => {
       <p className='indent-5'>
         For this dinner, we have been inspired by the most avant-garde elements
         of the city, although following our common thread: the{' '}
-        <span className='italic font-bold'>trencadis</span> . In contrast to the
+        <strong className='italic'>trencadis</strong> . In contrast to the
         previous night, where the chefs tasted Valencian gastronomy and we
         recreated a night of <strong>"Fallas"</strong> , for this night, we
         thought we would show the most modern and avant-garde Valencia through

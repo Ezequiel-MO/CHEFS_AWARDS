@@ -132,7 +132,7 @@ const CalleMayor_text = () => {
         preferred one for the client. It offers spectacular views of part of the
         city of Valencia. It also houses the two most emblematic elements of the
         Museum: Focault's pendulum and a representation of a DNA molecule.
-        However, we although this area would be feasible, we would like to
+        However, although this area would be feasible, we would like to
         discourage it because{' '}
       </p>
       <ul className='p-2'>
@@ -158,8 +158,8 @@ const Arquerias_text = () => {
       <p className='text-2xl font-bold my-5'>Arquerias</p>
       <p className='text-sm indent-5'>
         This space, located in the lower part of the{' '}
-        <strong>Principe Felipe Museum </strong> , consists of 12 sections of
-        300 square metres each we have not chosen this option for the following
+        <strong>Principe Felipe Museum </strong>, consists of 12 sections of 300
+        square metres each we have not chosen this option for the following
         reasons:{' '}
       </p>
       <ul className='p-2'>
